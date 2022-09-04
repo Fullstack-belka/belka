@@ -1,0 +1,70 @@
+/* ============================================================================================== 
+Artist Jera_Code
+By JUAN ESTEBAN RAMIREZ
+================================================================================================= */
+
+
+
+#primary-section .container-title{width: 100%;}
+#primary-section .container-title h1{font-weight: 100; font-size: 2rem; text-align: center;}
+#primary-section .container-title h1 strong{ font-size: 3rem; font-weight: 900; }
+#primary-section.container-section{display: block; min-height: 0;}
+#primary-section .container{display: flex; align-items: center; justify-content: center;}
+#primary-section .container figure {position: relative;}
+#primary-section .container figure img{transition: .4s all;}
+#primary-section .container p{text-align: left; line-height: 2rem; font-size: 1.4rem; }
+#primary-section .luna{position: absolute; opacity: 1; transition: .4s all; left:0;}
+#primary-section .luna:hover{position: absolute; opacity: 0;}
+
+
+/* LEAD SECTION */
+
+#lead-section .container-section{ justify-content: center; max-width: 1200px;}
+#lead-section .container-title{margin: 35px; opacity: 0; transition: .6s all ease-in; transition-delay: 1s; font-size: 2rem;}
+#lead-section .container-rocket{transform: scale(4) translate(-100vw);  transition: 1s all ease-in-out; }
+
+#lead-section.active .container-title{opacity: 1;}
+#lead-section.active .container-rocket{transform: scale(1) translate(0);}
+#lead-section.active.out .container-rocket{transform: scale(2) translate(100vh);}
+#lead-section.active.out .container-title{opacity: 0;}
+
+
+#nosotros-section.container-section{ display: block;}
+#nosotros-section h2{font-size: 3rem;}
+#nosotros-section p{font-size: 2rem; line-height: 3rem;}
+
+
+#belkateam-section{display: block; background: url(../image/background_belkateam.png) no-repeat center bottom / 100% ; padding-bottom: 0;}
+#belkateam-section .container-section{display: block; padding-bottom: 15px;}
+#belkateam-section .container-title{margin-bottom: 4rem;}
+#belkateam-section .container-title h2{font-size:3rem; font-weight: 100;}
+#belkateam-section .container-title h2 strong{font-weight: 900;}
+#belkateam-section .container-title p{font-size:2rem;}
+#belkateam-section .container-title p strong{font-size:2rem;}
+
+#belkateam-section .container-team{display: flex;flex-wrap: wrap; justify-content: center;}
+#belkateam-section .container-team .person{ text-align: center;  padding:  25px; display: flex; justify-content: center;} 
+#belkateam-section .container-team .person .content{position: relative; transition: .4s all;}
+#belkateam-section .container-team .person .content:hover{transform: scale(1.1);}
+#belkateam-section .container-team .person figure{margin: 0; display: flex; justify-content: center;}
+#belkateam-section .container-team .person .title-person{text-align: left; position: absolute; top: 0;}
+#belkateam-section .container-team .person h3{font-size:1.4rem; margin: 0;}
+#belkateam-section .container-team .person p{font-size:1rem; margin: 0; margin-top: 15px;}
+
+#belkateam-section .container-team .person.juanpa{width: 50%;} 
+#belkateam-section .container-team .person.juanes{width: 50%;} 
+
+footer{margin-top: 0;}
+
+
+@media (max-width: 900px) {
+
+    #lead-section .container-section{flex-wrap: wrap;}
+    #lead-section .container-title{font-size: 1.4rem;}
+    #primary-section .luna {position: absolute;opacity: 0;}
+    #primary-section .container p{font-size: 1.2rem;}
+    #primary-section .container{flex-wrap: wrap;}
+    #nosotros-section h2{font-size: 2rem;}
+    #nosotros-section p{font-size: 1.6rem;}
+}
+  

@@ -1,0 +1,163 @@
+/* ============================================================================================== 
+Artist Jera_Code
+By JUAN ESTEBAN RAMIREZ
+
+
+================================================================================================= */
+
+.services #planets-section{padding-top: 190px;}
+/* SECTION SERVICES*/
+.section-select-services.container-section{display: block; min-height: 50vh;}
+.section-select-services .container-title{margin-bottom: 4rem;}
+.section-select-services .main-title{font-weight: 100; font-size: 3rem;}
+.section-select-services .main-title strong{font-weight: 600;}
+.section-select-services .container-services{display: flex; flex-wrap: wrap; justify-content: center;}
+.section-select-services .container-services .service{width: calc(20% - 30px); margin: 15px;}
+.section-select-services .container-services .service a:hover img{ transform: scale(1.1) rotateY(5deg);}
+.section-select-services .container-services .service img{width: 100%; transition: .4s all;}
+.section-select-services.container-section{background: url('../image/services/malla_servicios.svg') no-repeat bottom center / 100%;}
+.section-select-services .title-plan-accion h2{font-size: 3rem; font-weight: 300;}
+.section-select-services .title-plan-accion h2 strong{font-weight: 700;}
+
+
+/*WEB SERVICES*/
+.section-select-services.container-section.web{margin-top: -250px; background: url('../image/services/web/malla_web.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.section-select-services.container-section.web .service{width: calc(33% - 30px); margin: 15px;}
+.section-select-services.web .container-msg{width: calc(50% - 30px); margin: 15px; align-self: flex-end;}
+.section-select-services.web .container-msg h3{font-size: 2.3rem;}
+.section-select-services.web .container-services{width: 50%;}
+.section-select-services.web .container-services.full {width: 100%; justify-content: flex-end;}
+.section-select-services.web .container-services.full .service{width: calc(17% - 35px); margin: 15px;}
+
+/*LEAD SERVICES*/
+
+.section-select-services.container-section.leads{background: url('../image/services/leads/malla_leads.svg') no-repeat bottom center / 100%;}
+.section-select-services.leads .container-services .service{width: calc(16% - 30px); min-height: 0;}
+
+
+.leads #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#BEB420);border: 1px solid #BEB420;}
+.leads #whatsAppFloatingButton::hover{    background-color: #BEB420;}
+.leads #contact-section{ background-image: linear-gradient( to top, #bcb2218c,transparent);}
+.leads #contact-section.active .container-form{border: 1px solid #BCB221;}
+.leads .container-form form{border: 1px solid #BCB221;     background-image: linear-gradient( 90deg, #BCB221,transparent);}
+.leads .container-form form .form-control{border-bottom-color: #BCB221;}
+.leads .container-form form textarea.form-control{border-color: #BCB221;}
+.leads .container-form .btn{background-color: #BCB221;}
+
+
+#section-introduction-planet .title-lead{display: flex; align-items: center;}
+#section-introduction-planet .title-lead h2{font-size: 2rem; font-weight: 600;}
+#section-introduction-planet .goals{display: flex; flex-wrap: wrap; justify-content: center;}
+#section-introduction-planet .goals .item{width: 250px;text-align: center; }
+#section-introduction-planet .goals .item p{font-size: 1.5rem;}
+
+/* COMUNIDAD */
+.section-select-services.container-section.comunidad{ background: url('../image/services/comunidad/malla_comunidad.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.comunidad .metodologia-section{margin-top: -250px;}
+
+/* COMERCIAL */
+.section-select-services.container-section.comercial{ background: url('../image/services/comercial/malla_comercial.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.comercial .metodologia-section{margin-top: -250px;}
+
+/* PRESENCIA */
+.section-select-services.container-section.presencia{ background: url('../image/services/presencia_digital/malla_presencia_digital.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.presencia .metodologia-section{margin-top: -250px;}
+
+#page.services p{font-size: 2rem;}
+#section-introduction-planet{display: flex; align-items: center; text-align: left; flex-wrap: wrap;}
+#section-introduction-planet .main-title{padding: 10px 20px; padding-left: 100px; margin-left: -110px; margin-bottom: 35px; background-color: var(--secondary-belka); color: white; transform: translateX(-20px) skewX(-10deg); border-radius: 10px; display: inline-flex;}
+#section-introduction-planet .main-title h1{margin: 0;}
+#section-introduction-planet .content{width: 60%;}
+#section-introduction-planet .planet{width: 40%;position: relative;height: 100%;}
+#section-introduction-planet .planet figure{display: flex;justify-content: flex-start;align-items: center;}
+#section-introduction-planet .planet figure img{position: absolute;}
+
+
+.right #section-introduction-planet .content{order: 2; text-align: right;}
+.right #section-introduction-planet .planet{order: 1;}
+.right #section-introduction-planet .planet figure img{right: 0;}
+.right #section-introduction-planet .main-title{padding-left: 20px;margin-left: 0;padding-right: 100px;margin-right: -110px;}
+.right #section-introduction-planet .description{text-align: right;}
+
+.right #section-informative{text-align: right;}
+.right #section-informative .title-icon{justify-content: flex-end;}
+.right #section-informative p.lead{    margin-left: auto; text-align: right;}
+
+.metodologia-section{min-height: 0; display: block; padding-top: 0;}
+.metodologia-section .items-metodologia .item{display: flex; flex-wrap: wrap; margin: 30px 15px;}
+.metodologia-section .items-metodologia .item h3{ width: 20%;}
+.metodologia-section .items-metodologia .item .description{ width: 50%; text-align: left; padding: 10px 25px; border-radius: 25px; position: relative;} 
+.metodologia-section .items-metodologia .item .description p{font-size: 1.1rem !important;} 
+.metodologia-section .items-metodologia .item .description::before{content: ''; display: flex; width: 35px; height: 35px; position: absolute; top: 0; left: -25px; background: url('../image/spaceship_decoration.png') no-repeat center / 100% ;} 
+.leads .metodologia-section .items-metodologia .item .description{ background: linear-gradient(to right,transparent, #BFB520); border: 1px solid #BFB520;} 
+.comunidad .metodologia-section .items-metodologia .item .description{ background: linear-gradient(to right,transparent, #1A7D57); border: 1px solid #1A7D57;} 
+.comercial .metodologia-section .items-metodologia .item .description{ background: linear-gradient(to right,transparent, #D95223); border: 1px solid #D95223;} 
+.presencia .metodologia-section .items-metodologia .item .description{ background: linear-gradient(to right,transparent, #B3BB33); border: 1px solid #B3BB33;} 
+.right .metodologia-section .items-metodologia .item{justify-content: flex-end;}
+
+
+.how-title{display: flex; align-items: center; width: 100%;}
+.how-title h2{font-size: 2.3rem; font-weight: 900; font-style: italic;}
+.how-title h2.light{font-weight: 300;}
+.how-title h2.light strong{font-weight: 900;}
+.how-title img{ margin: 10px;}
+
+.right .how-title{text-align: right; justify-content: flex-end;}
+
+/* INFORMACION VENDER */
+#section-informative{min-height: 0; margin-top: -150px; display: block;} 
+#section-informative p{text-align: left;} 
+#section-informative p.lead{max-width: 65%;} 
+#section-informative .title-icon {display: flex; justify-content: flex-start;} 
+#section-informative .title-icon h2{font-size: 2rem;} 
+#section-informative .title-icon figure{margin: 0 15px;align-items: center;display: flex;} 
+#section-informative .container-list{display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center;} 
+#section-informative .container-list .item{width: 50%; padding: 20px; display: flex; align-items: flex-start; text-align: left;} 
+#section-informative .container-list .item.w-100{width: 100%;} 
+#section-informative .container-list .item.w-75{width: 75%; flex-wrap: wrap; justify-content: center;} 
+#section-informative .container-list .item.w-75 .content{width: 100%; text-align: center; width: 80%;}
+#section-informative .container-list .item.w-75 .content p{text-align: center;}
+#section-informative .container-list .item h3{font-weight: 600; font-size: 1.5rem} 
+#section-informative .container-list .item p{font-size: 1rem; line-height: 1.5rem;} 
+
+
+@media (max-width: 900px) {
+    .services #planets-section{padding-top: 100px;}
+    .section-select-services.container-section.web .service{width: calc(50% - 30px);}
+    #section-introduction-planet{overflow: hidden;}
+    #section-introduction-planet .main-title{margin-left: 0;}
+
+    #section-informative .container-list .item{width: 100%;}
+    #section-informative .container-list .item.w-75{width: 100%;}
+
+    .section-select-services .main-title{font-size: 2rem;}
+    .how-title h2{font-size: 1.6rem;}
+    #page.services p{font-size: 1.5rem;max-width: 100%;}
+}  
+  
+@media (max-width: 725px) {
+
+
+    .how-title{}
+    .how-title h2{width: 100%;}
+
+    .section-select-services .title-plan-accion h2{font-size: 2rem;}
+    .section-select-services .container-services .service{width: calc(50% - 20px); margin: 10px;}
+    .section-select-services .main-title{font-size: 2rem;}
+    #section-introduction-planet .content{width: 100%;}
+
+    .section-select-services.web .container-services.full{justify-content: center;}
+    .section-select-services.web .container-msg{width: 100%;}
+    .section-select-services.web .container-services{order: 2; width: 100%;}
+    .section-select-services .container-services.full{order: 4;}
+    .section-select-services.web .container-services.full .service{width: calc(33.33% - 20px); margin: 10px;}
+    .section-select-services.container-section.web .service{width: calc(33% - 20px); margin: 10px;}
+
+    .section-select-services.leads .container-services .service{width: 50%;}
+    .presencia .metodologia-section{margin: 0;}
+
+    #section-introduction-planet .planet{left: 0;position: absolute; z-index: -1}
+    .right #section-introduction-planet .planet{left: unset;right: 0;}
+    .metodologia-section .items-metodologia .item h3{width: 100%;}
+    .metodologia-section .items-metodologia .item .description{width: 100%;}
+}

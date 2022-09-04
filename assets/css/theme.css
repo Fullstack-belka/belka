@@ -1,0 +1,502 @@
+/* ============================================================================================== 
+Artist Jera_Code
+By JUAN ESTEBAN RAMIREZ
+
+
+================================================================================================= */
+:root{
+  --primary-belka:#EE0000;
+  --secondary-belka:#E64B1A;
+  --third-belka:#b50202 ;
+  --primary-dark-belka:#0D0F1F;
+}
+*, ::after, ::before {box-sizing: border-box;}
+
+*{ font-family: 'Raleway' , 'Rubik' , Helvetica;}
+ul {list-style-type: none;margin: 0;padding: 0;  }
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+/* MAIN */
+main{z-index: 1;}
+body{overflow-x: hidden; margin-bottom: 0;transition: .4s all; font-size: 16px; scroll-behavior: smooth; color: white;}
+body.custom-background{    background-color: #0D0F1F;}
+section{padding: 50px 25px; margin: auto;}
+a{text-decoration: unset;}
+body.overflow{overflow: hidden;}
+
+
+/* HOME PRIMARY SECTION */
+.container-section{ text-align: center; min-height: 100vh;max-width: 1400px;   margin: auto; width: 100%; display: flex; padding: 90px 50px;align-items: center; opacity: 0; transition: .4s all;} 
+.container-section.full-w{max-width: none;} 
+.container-section.is-inview .heading-title{opacity: 1;}
+.container-section.is-inview{opacity: 1;}
+
+.container-title{} 
+.container-title .main-title{font-family: 'Raleway'; font-size: 3rem; font-weight: 200; color: white;}
+
+.stars, .twinkling{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;display:block;}
+.stars {background:#0D0F1F url(../image/bg_stars_1.png) repeat top center;z-index:-1; transition: .4s all;}
+.stars.black {background-color:#000; filter: blur(3px);}
+
+.twinkling{background:transparent url(../image/bg_particle_1.png) repeat top center;z-index:-1; transition: .4s all;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.twinkling.black{background:transparent url(../image/bg_particle_1_black.png) repeat top center;}
+
+
+.main-rocket{position: absolute;z-index: 2;display: flex;left: calc(50% - 100px);top: 0;}
+.rocket{background: transparent url(../image/rocket_1.svg) no-repeat center;z-index:-1;}
+.rocket.levitating{}
+
+.main-rocket.ascending{}
+.main-rocket.ascending::after{ position:absolute ; background: transparent url(../image/rocket_propulsor_1.svg) no-repeat center; display: flex; content: ''; height: 50px; bottom: 0;left: 25px;z-index: 1;width: 50px;
+    transform: rotate(-180deg);animation: rocket-fire-active .1s linear alternate infinite;transition: .4s all;}
+
+@keyframes rocket-fire-active {
+    to {
+      transform: translateX(-1%) rotate(-180deg) scaleY(1.07); 
+    }
+}
+
+  
+.text-light{font-weight: 100;}
+.text-bold{font-weight: bold;}
+.text-italic{font-style:italic;}
+
+input::focus,
+textarea::focus,
+select::focus{background-color: transparent; outline: unset; border: unset;}
+textarea{ resize: none;}
+input,
+textarea,
+select{background-color: transparent !important; outline: unset !important; border: unset;}
+.form-group {margin-bottom: 1rem; text-align: left;}
+.form-group label{color: #fff; margin-bottom: .8rem;display: block; padding-left: 20px;}
+.form-control {display: block;width: 100%;padding: 0.375rem 0.75rem;font-size: 1rem;line-height: 1.5;color: #495057;background-color: #fff;background-clip: padding-box;border: 1px solid transparent;border-radius: 0.25rem;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.btn{
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: bold;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  border-radius: 30px;
+  padding: 5px 30px;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;border: 1px solid transparent;font-size: 1rem;line-height: 1.5;
+  transition: color .15s ease-in-out,background .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+
+.btn.primary{background-color: var(--primary-belka);  color: white;}
+.btn.primary:hover {color: #fff;background-color:var(--secondary-belka) ;border-color: var(--secondary-belka);}
+.btn.secondary{background-color: var(--secondary-belka);  color: white;}
+.btn.secondary:hover {color: #fff;background-color:var(--primary-belka) ;border-color: var(--primary-belka);}  
+  
+/* HEADER */
+#main-header{position: fixed; top: 0; width: 100%; display: flex; z-index: 3; height: 110px; transform: translateY(-150px); opacity: 0; transition: .4s all;}
+#main-header::before{ content:'';background: transparent url(../image/malla_menu.svg) no-repeat center/ 100%;display: block;height: 100px;width: 100%;position: absolute;z-index: -1;transform: scaleY(0);transition: .4s all;transform-origin: center;}
+#main-header.active{    transform: translate(0px, 0px); opacity: 1;}
+#main-header.active::before{transform: scaleY(1);}
+#main-header.active.scroll::before{height: 50px;;}
+#main-header .main-menu{margin: auto;}
+#main-header ul{display: flex; justify-content: center; margin: auto; align-items: center; flex-wrap: wrap;}
+#main-header ul li a{color: white; background-color: var(--third-belka) ; font-size: 1rem; margin: 10px; text-decoration: unset; padding:2px 20px; min-width: 150px; border:1px solid; border-radius: 25px; border-color: var(--third-belka); transition: .4s all; display: block; text-align: center; font-weight: bold;}
+#main-header ul li.logo a{background-color: unset;}
+#main-header ul li a.active,
+#main-header ul li a:hover {background-color: var(--primary-belka); border-color: var(--primary-belka); }
+#main-header ul li.logo a{border: 0px;}
+#main-header ul li.logo a.active,
+#main-header ul li.logo a:hover{background-color: unset;}
+#main-header .site-branding .custom-logo-link img{max-width: 125px;}
+
+.container-toggle{position: absolute;width: 35px;height: 35px; margin: 0 10px;     border: 1px solid var(--primary-belka);padding: 5px;  animation: animationHamburguer .5s 1, linear; cursor: pointer; display: none; right: 30px; top:20px;}
+.menu_toggle {align-items: center; cursor: pointer; height: 30px; padding: 0 !important; width: 30px;}
+.menu_toggle span {display: block;position: relative;}
+.menu_toggle span:after {content: ""; left: 0; position: absolute; top: 8px;}
+.menu_toggle span:before {content: ""; left: 0; position: absolute; top: -8px;}
+.menu_toggle span,
+.menu_toggle span:after {backface-visibility: hidden; background-color: var(--primary-belka); border-radius: 2px; height: 2px; transition: all 0.3s linear; width: 100%;top: 8px;}
+.menu_toggle span:before {backface-visibility: hidden; background-color: var(--primary-belka); ; border-radius: 2px; height: 2px; transition: unset; width: 100%;}
+.menu_toggle.on span:before {visibility: hidden;}
+.menu_toggle.on span {transform: rotate(45deg) translate(0, 0);}
+.menu_toggle.on span:after{transform: rotate(-90deg) translate(8px, -1px);}
+
+
+/* NAVEGACION CAROUSELES*/
+
+.wrap_nav {height: 0;right: 0;width: 100%;top: calc(50% - 30px);left: unset; display: flex;z-index: 1;justify-content: space-between;position: absolute;}
+.wrap_nav .nav{display: flex; justify-content: center; transition: .4s all ease-in; padding: 20px;border: 1px solid transparent; border-radius: 5px; background-color: transparent; z-index: 2;height: 80px; cursor: pointer;}
+.wrap_nav .nav:hover{border: 1px solid var(--primary-belka); }
+.wrap_nav .nav::before{z-index: 1; height: 40px; width: 40px;}
+.wrap_nav .nav.prev {transform: translate(20%); }
+.wrap_nav .nav.next {transform: translate(-20%); }
+.wrap_nav .nav.prev::before{content:''; background: url('../image/carousel_arrow.png') no-repeat center / 40px;}
+.wrap_nav .nav.next::before{content:''; background: url('../image/carousel_arrow.png') no-repeat center / 40px;  transform: rotate(180deg);}
+
+
+/*PAGINA DECONTACTO*/
+
+#page.contact .container-title h1.heading-title{font-size: 3rem; font-weight: 100; text-align: center; margin-top: 140px;}
+
+@keyframes animationParpadeo {
+  0% {opacity:  0.25;}
+  50% {opacity:  1;}
+  0% {opacity:  0.25;}
+}
+
+#contact-section .container-section{flex-wrap: wrap; opacity: 1;}
+#contact-section .container-form{width: 60%; }
+#contact-section .container-rocket{width: 40%; position: relative; transform: translateX(100vw); transition: 1s all ease-in-out; }
+#contact-section .container-rocket .pop-whatsapp{position: absolute; top: 0;transform: translateX(-10px);}
+#contact-section .container-rocket .main-title{font-weight: 100;}
+#contact-section .container-rocket .main-title strong{font-weight: bold;}
+
+.container-form{border: 1px solid transparent; border-radius: 30px; padding: 15px 25px; position: relative; transition: .5s all; }
+
+.container-form form{background-image: linear-gradient( 90deg, #ee0000a1,transparent) ; opacity:0; border: 1px solid var(--primary-belka); border-radius: 30px; padding: 40px 25px;}
+.container-form form input::placeholder,
+.container-form select,
+.container-form textarea,
+.container-form textarea::placeholder,
+.container-form form input{color: white !important;}
+.container-form select option{color: black}
+
+
+.container-form .btn{margin-top: 1rem; background-color: var(--primary-belka); text-transform: uppercase; color: white; border-radius: 30px; padding: 5px 30px; font-weight: bold;}
+.container-form .btn:hover {color: #fff;background: linear-gradient( 90deg, transparent,#ee0000a1) ;;border-color: var(--primary-belka);}
+.container-form form .form-control:not(.wpforms-field ){padding: 10px 20px; background-color: transparent ; border-bottom: 1px solid var(--primary-belka)  !important; width: 100%;}
+.container-form form textarea.form-control{ border: 1px solid var(--primary-belka);}
+.container-form .capsule{max-width: 150px; position: absolute;}
+.container-form .capsule.capsule-1{top: -75px; left: -75px;}
+.container-form .capsule.capsule-2{bottom: -75px; right: -75px;}
+.container-form .capsule{transform: scale(0); transition: .6s all;}
+
+
+/* WP-FORMS*/
+.container-form div.wpforms-container .wpforms-form .choices__placeholder{opacity: 1 !important;}
+.container-form div.wpforms-container .wpforms-form .choices__list--dropdown .choices__item--selectable.is-highlighted{background: var(--primary-dark-belka);}
+.container-form div.wpforms-container-full .wpforms-form .choices{color: white !important;}
+.container-form div.wpforms-container .wpforms-form .choices__inner{background-color: transparent;color: white !important;border: 0;outline: unset;}
+.container-form div.wpforms-container .wpforms-form .choices__list--dropdown{background: linear-gradient( 90deg, var(--primary-belka),transparent) !important}
+.container-form .wpforms-submit.btn{margin-top: 1rem; background-color: var(--primary-belka) !important; border-color: transparent !important; text-transform: uppercase; color: white !important; border-radius: 30px !important; padding: 5px 30px !important; font-weight: bold;}
+.container-form .wpforms-submit.btn:hover {color: #fff !important;background: linear-gradient( 90deg, transparent,#ee0000a1) !important;border-color: var(--primary-belka) !important;}
+.container-form form .form-control.wpforms-field{text-align: left;}
+.container-form form .form-control .wpforms-field-medium{ max-width: 100% !important; background-color: transparent ; border: 1px solid transparent !important; border-bottom: 1px solid var(--primary-belka)  !important; width: 100%;}
+.container-form form .form-control textarea.wpforms-field-medium{ border: 1px solid var(--primary-belka) !important;}
+.container-form .wpforms-field-label{ color: white; font-weight: 300 !important;}
+.container-form .iti__country-name{color: black !important;}
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select,
+div.wpforms-container-full .wpforms-form textarea{border: 1px solid transparent; border-bottom: 1px solid var(--primary-belka);}
+ 
+div.wpforms-container-full .wpforms-form label.wpforms-error{color: #ffffff !important;}
+div.wpforms-container-full .wpforms-form .wpforms-field input.wpforms-error, div.wpforms-container-full .wpforms-form .wpforms-field input.user-invalid, div.wpforms-container-full .wpforms-form .wpforms-field textarea.wpforms-error, div.wpforms-container-full .wpforms-form .wpforms-field textarea.user-invalid, div.wpforms-container-full .wpforms-form .wpforms-field select.wpforms-error, div.wpforms-container-full .wpforms-form .wpforms-field select.user-invalid,
+div.wpforms-container-full .wpforms-form .wpforms-field.wpforms-has-error .choices__inner{border: 1px solid #ffffff !important;}
+div.wpforms-container-full .wpforms-form .wpforms-error-container,
+div.wpforms-container-full .wpforms-form noscript.wpforms-error-noscript{color:  white !important;}
+
+
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message){
+  background: linear-gradient( to bottom, transparent,#ee0000a1) !important;
+  border: 1px solid var(--primary-belka)  !important;
+  border-radius: 20px;
+  padding: 50px 25px !important;
+  color: white !important;
+}
+/* RECAPTCHA */
+.grecaptcha-badge {bottom:200px!important; transition:.3s all!important; opacity:0;}
+.grecaptcha-badge.active {opacity:1;}
+
+#contact-section.active .container-rocket{transform: translateX(0);}
+#contact-section.active .container-form{border: 1px solid var(--primary-belka);}
+#contact-section.active .container-form .capsule{transform: scale(1);}
+#contact-section.active .container-form form{animation: animationParpadeo .5s 2, linear; opacity: 1; transition-delay: .5s;}
+
+/* SECTION PLANETAS */
+#planets-section{display: flex; justify-content: center; max-width: 1400px; position: relative;}
+#planets-section .wrap_nav{display: none;}
+#planets-section .container-rocket{width: 30%; transform: translateX(-100vw); transition: .8s linear; }
+#planets-section.active .container-rocket{  transform: translateX(0);}
+#planets-section .container-rocket .container-image img{width: 100%; max-width: 350px;}
+#planets-section .container-planets{display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 70%; transform: translateX(100vw); transition: 1s all ease-in-out;  }
+#planets-section.active .container-planets{transform: translateX(0);}
+#planets-section .container-planets a{color: white; font-weight: 600; text-decoration: unset; text-align: center; transition: .4s all; display: block;}
+#planets-section .container-planets a:hover{transform: scale(1.1); }
+#planets-section .container-planets a img{margin: auto;}
+#planets-section .container-planets a h3{text-align: center; max-width: 135px; margin: auto; margin-bottom: 0px;}
+#planets-section .container-title .main-title{font-size: 3rem; font-weight: 100; text-align: right;}
+#planets-section .container-planets .planet{margin: 25px;}
+#planets-section .container-planets .group-planets{display: flex; flex-wrap: wrap; max-width: 300px; width: 100%; transform: translateX(40px); }
+#planets-section .container-planets .planet-1{ align-self: flex-end; transform: translateX(40px) translateY(-40px);  }
+#planets-section .container-planets .planet-2{ align-self: flex-start;  transform: translateX(80px) translateY(-40px);}
+#planets-section .container-planets .planet-3{ align-self: center;  transform: translateX(90px) translateY(40px);}
+#planets-section .container-planets .planet-4{ align-self: flex-start;  transform: translateX(-80px) translateY(-40px);}
+#planets-section .container-planets .planet-5{ align-self: flex-end; transform: translateX(-40px) translateY(-120px);}
+#planets-section .container-planets .planet-6{ align-self: flex-end; transform: translateX(0) translateY(-40px);}
+
+
+.scroll-top.scroll-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: calc(50% - 25px);
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transform: translate3d(0, 200%, 0);
+  -moz-transform: translate3d(0, 200%, 0);
+  -ms-transform: translate3d(0, 200%, 0);
+  -o-transform: translate3d(0, 200%, 0);
+  transform: translate3d(0, 200%, 0);
+}
+.scroll-top a {
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;text-align: center;
+  padding: 10px;border-radius: 0.25rem;
+  -moz-box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.15) !important;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes animationScrollDown {
+  0% {transform:  translateY(0);}
+  50% {transform:  translateY(50px);}
+  0% {transform: translateY(0);}
+}
+
+.scroll-top a:hover{  border: 1px solid var(--primary-belka);   background: linear-gradient(to right, transparent , var(--primary-belka));}
+.scroll-top a svg{ width: 25px;height: 25px; display: flex; fill: white;}
+.scroll-top a{ will-change: transform;
+  animation: animationScrollDown .7s 2, cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+.whatsapp-floating-button{display: flex;position: fixed; transition:.4s all ; bottom: 24px;right: 48px;
+  z-index: 10; background: linear-gradient(to right, transparent , var(--primary-belka)); border: 1px solid var(--primary-belka);
+  border-radius: 50%; padding: 10px;
+  height: 56px; width: 56px;color: white;
+  transform: translateX(200px);
+  transition: .4s all ease-in-out;
+}
+
+.whatsapp-floating-button.active{    transform: translateX(0);}
+
+
+.whatsapp-floating-button:hover{background-color: var(--primary-belka); color: white;}
+.whatsapp-floating-button i{margin: auto;}
+
+
+.whatsapp-floating-button .f-wsp-1,
+.whatsapp-floating-button .f-wsp-2{fill:#fff;}
+.whatsapp-floating-button .f-wsp-2{fill-rule:evenodd;}
+
+footer{    background: linear-gradient( 90deg, #cb0317ba , transparent); margin-top: 0; display: flex; flex-wrap: wrap; position: relative;}
+footer *{color: white; font-size: .8rem;}
+footer ul li{margin-bottom: 15px;}
+footer a{    word-break: break-all;}
+footer .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75%;
+  padding: 35px 15px; 
+}
+
+footer .column{border-left: 1px solid white; padding: 0 15px; max-width: 250px;}
+footer .column ul li a.active:before{content: '';  background: url('../image/ico/ico_arrow.svg') no-repeat center / 100%; width: 10px; height: 10px; display: inline-block; margin-right: 5px;}
+footer .column .container_logo{text-align: center;}
+footer .column.social ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
+footer .column.social .social_links{margin-bottom: 20px;}
+footer .column.social ul a{margin: 0 10px; transition: .4s all;}
+footer .column.social ul a:hover{transform: scale(1.1); display: flex;}
+footer .column.contact{max-width: 260px;}
+footer .column.contact ul li a img{width: 15px; margin-right: 5px;    vertical-align: middle;}
+footer .column:first-child{border-color: transparent;}
+footer .column h3{font-style: italic; margin-top: 0; text-align: center; margin-bottom: 20px;} 
+
+
+footer .container-moon{width: 25%; position: relative; display: flex; align-items: flex-end;}
+footer .container-moon .moon{position: relative;}
+footer .container-moon .moon .image_luna{ bottom: 0; margin: 0; right: 0;}
+footer .container-moon .moon figure{margin: 0;}
+
+footer .container-moon .moon .mini_rocket{position: absolute;top:0; left: 20%;}
+footer .container-moon .moon .belka_flag{position: absolute;right: 20px; bottom: 55%;}
+footer .container-moon .moon .belka_dog{position: absolute;top:-50px; right: calc(50% - 80px);}
+
+footer .form_newsletter{display: flex; justify-content: center; align-items: center;}
+footer .form_newsletter input{background: white; color: #333; height: 35px; padding: 10px;  border-radius: 15px 0 0 15px; font-size: .9rem;}
+footer .form_newsletter button{background: var(--primary-belka); color: white; height: 35px;border-radius: 0 15px 15px 0; border: 0; font-size: .9rem; transition: .4s all;}
+footer .form_newsletter button:hover{background: var(--secondary-belka);  }
+
+footer .column .newsletter .div.wpforms-container-full{margin: 0;}
+footer .column .newsletter form{display: flex; position: relative;}
+footer .column .newsletter div.wpforms-container-full .wpforms-form label.wpforms-error{position: absolute;}
+footer .column .newsletter div.wpforms-container-full .wpforms-form .wpforms-field{padding: 0;}
+footer .column .newsletter div.wpforms-container-full .wpforms-form .wpforms-submit-container{padding: 0;}
+footer .column .newsletter .wpforms-submit-container .btn{background: var(--primary-belka); color: white; height: 35px !important;border-radius: 0 15px 15px 0; padding: 0px 10px;    border: 1px solid transparent; font-size: .9rem; transition: .4s all;}
+footer .column .newsletter .form-control input{background: white !important; color: #333; height: 35px !important;border-radius:  15px 0 0 15px !important; border: 0; font-size: .9rem; transition: .4s all;}
+footer .column .newsletter .wpforms-confirmation-container-full{padding: 5px !important; text-align: center;}
+footer .column .newsletter .wpforms-confirmation-container-full h3{margin-bottom: 5px;}
+footer .column .newsletter .wpforms-submit-container .btn:hover{    background: linear-gradient( 90deg, transparent,#ee0000a1) !important;
+  border-color: var(--primary-belka) !important;}
+
+@media (max-width: 1365px) {
+
+  footer .column.social{ max-width: 100%; width: 100%; display: flex;align-items: center;justify-content: center;margin-bottom: 50px;}
+  footer .column.social ul{justify-content: center; order: 2;}
+  footer .column .container_logo{order: 1;}
+  footer .column.social .social_links{order: 2;}
+  footer .column:nth-child(2){border-color: transparent;}
+}
+@media (max-width: 1100px) {
+  .container-section{min-height: 70vh;}
+  #planets-section .container-planets .planet-3{transform: translateX(0px) translateY(-60px);}
+  #planets-section .container-planets .planet-4{transform: translateX(40px) translateY(-0);}
+  #planets-section .container-planets .planet-5{transform: translateX(-40px) translateY(-20px);}
+  #contact-section .container-form{width: 100%;}
+  #contact-section .container-rocket{width: 100%; margin-top: 40px;}
+  
+  footer .container-moon .moon .belka_flag{right: 20px;}
+  footer .container-moon .moon .mini_rocket{top: -25px;}
+
+}
+
+@media (max-width: 1000px) {
+  footer .container{width: 100%; justify-content: flex-start;}
+  footer .container-moon{right: 0; bottom: -8px; position: absolute; width: 50%;}
+}
+
+
+@media (max-width: 900px) {
+
+  #main-header{height: 0; z-index: 0;}
+  #main-header.open{z-index: 10;}
+  #main-header::before{background-size: cover; height: 100px;}
+  #main-header.active.scroll::before{height: 100px;}
+  .container-section{padding: 35px 15px;}
+  #main-header .container-toggle{display: block;}
+  #main-header .main-menu{height: 100vh;padding-top: 50px; transform: translateX(-100vw); transition: .4s all; background: linear-gradient(to bottom, #ee0000d4 , #0d0f1fb5);}
+  #main-header.open .main-menu{transform: translateX(0);}
+  #main-header.open .container-toggle{border: 1px solid white;}
+  .open .container-toggle{border: 1px solid white;}
+  .open .menu_toggle span:before{background-color: white;}
+  .open .menu_toggle span, .open .menu_toggle span:after{background-color: white;}
+  #main-header ul li{width: 100%; order: 2;}
+  #main-header ul li.logo{order: 1;text-align: center;}
+  #main-header ul li.logo a{display: inline-block; margin: auto;}
+  #main-header ul li a.active, #main-header ul li a:hover{border: 2px solid white;}
+  #main-header ul li a{background-color: transparent;border: 1px solid transparent;display: block;padding: 15px;border-bottom: 2px solid white;}
+
+  .wrap_nav{top: calc(75% - 30px);}
+  .wrap_nav .nav{height: 65px; padding: 10px;}
+  .wrap_nav .nav.next::before,
+  .wrap_nav .nav.prev::before{background-size: 46px; width: 46px; height: 46px;}
+
+  #planets-section .container-rocket{transform: scale(4) translate(-100vw);  transition: 1s all ease-in-out; }
+  #planets-section.active .container-rocket{transform: scale(1) translate(0);}
+
+  /* PLANTES SECTION*/
+  #planets-section .wrap_nav{display: flex;}
+  #planets-section .container-rocket .container-image img{max-width: 250px;}
+  #planets-section{flex-wrap: wrap;overflow: hidden;}
+  #planets-section .container-rocket{width: 100%; margin-bottom: 40px;}
+  #planets-section .container-planets{width: 100%;}
+  #planets-section .container-title .main-title{text-align: center;}
+  #planets-section .container-planets .planet{    transform: translateX(-0) translateY(0);}
+  #planets-section .container-planets a h3{max-width: none; font-size: 1.4rem; position: absolute; bottom: 40px; width: 100%;}
+  #planets-section .container-planets a img{width: 100%;}
+  #planets-section .container-planets a img{max-width: 350px;}
+
+  .whatsapp-floating-button{right: 15px;}
+
+  #contact-section{overflow: hidden;}
+  #main-header .desktop{display: none;}
+
+  footer{overflow: hidden; padding-bottom: 100px;}
+  footer *{font-size: 1rem;}
+  footer .column h3{font-size: 1.2rem; text-align: left;}
+  footer .form_newsletter input{width: 100%;}
+  footer .container-moon .moon .image_luna img{width: 350px;}
+  footer .column:first-child{border-color: white;}
+  footer .column.contact{max-width: none;}
+  footer .column{width: 100%; max-width: 100%; margin-bottom: 25px; border-left: 0; border-bottom: 1px solid white; padding-bottom: 10px;}
+}
+@media (max-width: 600px) {
+
+
+  .container-title .main-title{font-size: 2rem;}
+
+
+  footer .container-moon{    width: 100%; justify-content: flex-end;}
+  #planets-section{overflow: hidden;}
+
+  
+  #contact-section .container-rocket .pop-whatsapp{display: none;}
+  #contact-section .container-form{padding: 10px;}
+  #contact-section .container-rocket img{max-width: 200px;}
+}
+
+@media (max-width: 525px) {
+  #contact-section{    padding: 50px 0;}
+  
+  
+}
+
+

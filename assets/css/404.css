@@ -1,0 +1,22 @@
+/* ============================================================================================== 
+Artist Jera_Code
+By JUAN ESTEBAN RAMIREZ
+================================================================================================= */
+#section-page-404 .content{width: 100%;}
+#section-page-404 .content .lead{font-size: 1.4rem; font-weight: 600; margin-top: 40px;}
+
+#section-page-404 ul.pages{display: flex; justify-content: center; margin: auto; align-items: center; flex-wrap: wrap;}
+#section-page-404 ul.pages li a{color: white; background-color:transparent; font-size: 1rem; margin: 10px; text-decoration: unset; padding:2px 20px; min-width: 150px; border:1px solid; border-radius: 25px; border-color: var(--third-belka); transition: .4s all; display: block; text-align: center; font-weight: bold;}
+#section-page-404 ul.pages li.logo a{background-color: unset;}
+#section-page-404 ul.pages li a.active,
+#section-page-404 ul.pages li a:hover {background-color: var(--primary-belka); border-color: var(--primary-belka); }
+
+
+#section-page-404 #planets-section{margin-top: 100px;}
+
+
+@media (max-width: 900px) {
+
+
+}
+  

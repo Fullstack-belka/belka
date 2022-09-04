@@ -1,0 +1,143 @@
+/* =====================================
+Artist Jera_Code
+By JUAN ESTEBAN RAMIREZ
+
+===================================== */
+
+
+/* HOME PRIMARY SECTION */
+#primary-section .container-section{flex-direction: column; text-align: center; justify-content: center; padding: 0; opacity: 0; transition: .8s all; transition-delay: .5s;}
+#primary-section .container-section.active{opacity: 1; }
+#primary-section h1{font-family: 'Raleway'; font-size: 3rem; font-weight: 200; color: white;}
+
+
+/* HOME SECONDARY SECTION */
+#secondary-section{ position: relative;}
+#secondary-section .container-earth{ position: relative; padding: 100px 0; transform: translateY(400px); transition: .8s ease-in-out;}
+#secondary-section .earth.minimize{transform:  translate( -50% , -100%) scale(.4) !important;}
+#secondary-section .atmosfera.minimize{transform:  translate( -50% , -100%) scale(.4) !important;}
+#secondary-section .container-earth.minimize{transform: translateY(400px) translateX(-100%) scale(.4);}
+#secondary-section .rocket{display: flex; width: 200px; height: 200px; top: 0; z-index: 2; transition: .8s all ease-in-out;}
+#secondary-section .main-rocket{transition: .8s ease;}
+#secondary-section .main-rocket.show-map{transform: translateX(100%) scale(5) !important;}
+#secondary-section.active .main-rocket.ascending{transition: .2s ease;}
+#secondary-section .content-earth{position: relative; padding-top: 40px;}
+#secondary-section .earth {width: 1000px;height: 1000px;transition: .4s ease-out; position: relative;top: 0;bottom: 0;z-index: 1;left: 0;right: 0;margin: auto;overflow: hidden;border-radius: 50%;box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #0000001f;}
+#secondary-section .earth:after {position: absolute;content: "";top: 0;bottom: 0;left: 0;right: 0;box-shadow: -20px -20px 50px 2px #000 inset;border-radius: 50%;}
+#secondary-section .earth > .circle {width: 200%;height: 100%;animation: spin-earth 60s linear alternate infinite;background: url(../image/earth_home.jpg);background-size: cover;}
+#secondary-section .atmosfera{background: radial-gradient(circle, #ffffff 0%, #1c6d76 50%, #00d4ff00 60% );transition: .4s ease-in;border-radius: 50%;position: absolute;height:  90%;left: 0;top: -20px;right: 0;}
+
+  @keyframes spin-earth {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+#lead-section .container-section{ justify-content: center;}
+#lead-section .container-title{margin: 35px; opacity: 0; transition: .4s all ease-in; transition-delay: .3s;}
+#lead-section .container-rocket{transform: scale(4) translate(-100vw);  transition: 1s all ease-in-out; }
+
+#lead-section.active .container-title{opacity: 1;}
+#lead-section.active .container-rocket{transform: scale(1) translate(0);}
+#lead-section.active.out .container-rocket{transform: scale(2) translate(100vh);}
+#lead-section.active.out .container-title{opacity: 0;}
+
+
+#fourth-section{ position: relative; padding: 50px 0;}
+
+#fourth-section .container-section{justify-content: center;}
+#fourth-section .container-section.two .main-title strong{font-weight: bold;}
+#fourth-section .container-title{text-align: center; width: 100%;}
+#fourth-section .container-title.second{opacity: 0; transform: translateY(-30%); display: none  ;} 
+#fourth-section .black-hole-img{  width: 430px;  display: flex; position: sticky; top: 40px; left: -200px; z-index: -1; transform: scale(0) rotate(30deg); transition: .9s all ease-in-out;  }
+#fourth-section.active .black-hole-img{ transform: scale(1) rotate(0);}
+
+#fourth-section .astronauta-img{  width: 200px;  display: flex; position: sticky; bottom: 40px; right: -100px;margin-left: auto; z-index: -1;transform: translateX(150%) rotate(30deg); transition: .9s all ease-in-out; }
+#fourth-section.active .astronauta-img{ transform: translateX(0) rotate(0);}
+
+#fourth-section .astronauta-img img{transform: scale(1.2);}
+#fourth-section .black-hole-img img{transform: scale(1.2);}
+
+
+#six-section{display: block;}
+#six-section .container-reflector{position: absolute; z-index: -1; top: 0; transform: translate(-40px , 80px) ;}
+#six-section .container-image{margin: auto; position: relative; display: flex;}
+#six-section .container-image img{margin: auto;}
+#six-section h2{color: white; font-size: 2rem; text-align: center;}
+#six-section h2 span{display: block;}
+#six-section h2 .h2{font-size: 3rem;}
+#six-section h2 .h1{font-size: 5rem; font-style: italic;}
+
+#six-section .form_newsletter{max-width: 600px; margin: auto; text-align: center;}
+#six-section .form_newsletter input{border: 1px solid transparent;text-align: center;font-size: 1.5rem; color: white;}
+#six-section .form_newsletter input::placeholder{color: white; opacity: 0.7;}
+#six-section .form_newsletter .wpforms-field input.wpforms-error{border: 1px solid transparent !important; border-bottom: 1px solid white !important; }
+#six-section .form_newsletter .wpforms-confirmation-container-full{padding: 10px !important;}
+#six-section .form_newsletter .wpforms-confirmation-container-full p{margin: 15px 0;}
+
+#six-section form .form-control{text-align: center; background-color: transparent; padding: 15px 35px; border: 1px solid var(--primary-belka) ; font-size: 1.4rem; border-radius: 35px; color: white;}
+#six-section .btn{margin-top: 1.4rem; background-color: var(--primary-belka);    border: 1px solid var(--primary-belka); text-transform: uppercase; color: white; border-radius: 30px; padding: 5px 30px; font-weight: bold;}
+#six-section .btn:hover {color: #fff;background: linear-gradient( 90deg, transparent,#ee0000a1) ;border-color: var(--primary-belka);}
+
+
+#six-section .container-reflector img{transition: .4s all; will-change: transform; transform-origin: top;transform: scale(0);}
+#six-section.active .container-reflector img{ transform: scale(1);}
+
+
+#seven-section .main-title{font-weight: bold; font-size: 2.3rem; color: white;}
+#seven-section .main-title .text-italic{font-weight: bold;}
+#seven-section p{font-size: 3.5rem; color: white; font-weight: 100;}
+
+
+@media (max-width: 1100px) {
+  #primary-section .container-section{min-height: 100vh;}
+  #secondary-section .earth{width: 800px; height: 800px;}
+  #seven-section p{font-size: 2rem;}
+  #lead-section .container-section{flex-wrap: wrap;}
+}
+
+
+@media (max-width: 900px) {
+  
+
+  
+  #secondary-section{overflow-x: hidden;}
+  #secondary-section .container-earth.minimize{    transform: translateY(400px) translateX(-100vw) scale(.4)}
+  #secondary-section .earth{width: 100%; height: 400px;}
+
+  #lead-section .container-section{display: none;}
+  #lead-section .container-title{transition-delay: 0s;}
+
+  #lead-section .container-rocket
+
+  #fourth-section{overflow: hidden;}
+  #contact-section .container-rocket .pop-whatsapp{display: none;}
+  #contact-section{overflow: hidden;}
+
+  #lead-section .container-rocket img{max-width: 250px;}
+  #contact-section .container-form .capsule{ max-width: 45px;}
+
+  #planets-section .container-title .main-title{font-size: 2rem;}
+  #fourth-section .black-hole-img{position: fixed;}
+  #fourth-section .black-hole-img img{transform: scale(1); top: -30px;}
+  #fourth-section .astronauta-img{position: fixed; bottom: 0;}
+  #fourth-section .astronauta-img img{transform: scale(1);}
+
+  #six-section{overflow: hidden;}
+  #six-section h2{font-size: 1.4rem;}
+  #six-section h2 .h2{font-size: 2rem;}
+  #six-section h2 .h1{font-size: 3rem;}
+  #six-section .container-reflector{transform: translate(-0, 80px);}
+  #six-section form .form-control{padding: 10px 20px;}
+
+  #six-section .container-reflector{transform: translate( calc(250px - 50%) , 80px )}
+  #six-section .container-reflector img{ width: 500px; height: 500px;}
+}
+
+@media (max-width: 450px) {
+  
+  #primary-section h1{font-size: 1.5rem;}
+  #primary-section .container-section img{max-width: 250px;}
+  
+  #six-section .container-reflector {transform: translate( calc(250px - 63%) , 80px )}
+}
