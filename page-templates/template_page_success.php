@@ -60,11 +60,11 @@ get_header();
                                 <p>De 2019 a 2020 <br> Aumentaron las ventas</p>
                                 <div class="number">
                                 <svg width="55px" height="55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.09 76.75"><g><g><path  d="M10.67,36.6L32.05,15.05l21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64L36.32,2.11c-2.36-2.36-6.19-2.36-8.55,0L2.11,27.96c-2.36,2.39-2.36,6.25,0,8.64,2.37,2.36,6.19,2.36,8.56,0h0Z"/><path  d="M36.32,40.14c-2.36-2.36-6.19-2.36-8.55,0L2.11,65.99c-2.36,2.39-2.36,6.25,0,8.64,2.36,2.36,6.19,2.36,8.56,0l21.38-21.55,21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64l-25.65-25.85Z"/></g></g></svg>        
-                                <span id="au_regol" class="number">3.843</span>%</div>
+                                <span class="number number_count" data-number="3843">3.843</span>%</div>
                             </div>
                             <div class="item">
                                 <p>Hemos logrado un</p>
-                                <div class="number">1.1015%</div>
+                                <div class="number"><span class="number number_count" data-number="11015">1.1015</span>%</div>
                                 <p>EN ROAS</p>
                             </div>
                         </div>
@@ -100,9 +100,9 @@ get_header();
                             <div class="item">
                                 <div class="number">
                                 <svg width="55px" height="55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.09 76.75"><g><g><path  d="M10.67,36.6L32.05,15.05l21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64L36.32,2.11c-2.36-2.36-6.19-2.36-8.55,0L2.11,27.96c-2.36,2.39-2.36,6.25,0,8.64,2.37,2.36,6.19,2.36,8.56,0h0Z"/><path  d="M36.32,40.14c-2.36-2.36-6.19-2.36-8.55,0L2.11,65.99c-2.36,2.39-2.36,6.25,0,8.64,2.36,2.36,6.19,2.36,8.56,0l21.38-21.55,21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64l-25.65-25.85Z"/></g></g></svg>    
-                                292%</div>
+                                <span class="number number_count" data-number="292">292</span>%</div>
                                 <span>y un Roas de</span>
-                                <div class="number">901%</div>
+                                <div class="number"><span class="number number_count" data-number="901">901</span>%</div>
                             </div>
                         </div>
                         <div class="link">
@@ -138,15 +138,15 @@ get_header();
                         <div class="cifras">
                             <div class="item">
                                 <span>Lo digital para esta marca representa el</span>
-                                <div class="number">95%</div>                            
+                                <div class="number"><span class="number number_count" data-number="95">95</span>%</div>                            
                                 <span>En Ventas</span>
                             </div>
                             <div class="item">
                                 <div class="number">
                                 <svg width="55px" height="55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.09 76.75"><g><g><path  d="M10.67,36.6L32.05,15.05l21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64L36.32,2.11c-2.36-2.36-6.19-2.36-8.55,0L2.11,27.96c-2.36,2.39-2.36,6.25,0,8.64,2.37,2.36,6.19,2.36,8.56,0h0Z"/><path  d="M36.32,40.14c-2.36-2.36-6.19-2.36-8.55,0L2.11,65.99c-2.36,2.39-2.36,6.25,0,8.64,2.36,2.36,6.19,2.36,8.56,0l21.38-21.55,21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64l-25.65-25.85Z"/></g></g></svg>    
-                                292%</div>
+                                <span class="number number_count" data-number="292">292</span>%</div>
                                 <span>y un Roas de</span>
-                                <div class="number">601%</div>
+                                <div class="number"><span class="number number_count" data-number="601">601</span>%</div>
                             </div>
                         </div>
                         <div class="link">
@@ -179,12 +179,12 @@ get_header();
                             <div class="item">
                                 <div class="number">
                                 <svg width="55px" height="55px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.09 76.75"><g><g><path  d="M10.67,36.6L32.05,15.05l21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64L36.32,2.11c-2.36-2.36-6.19-2.36-8.55,0L2.11,27.96c-2.36,2.39-2.36,6.25,0,8.64,2.37,2.36,6.19,2.36,8.56,0h0Z"/><path  d="M36.32,40.14c-2.36-2.36-6.19-2.36-8.55,0L2.11,65.99c-2.36,2.39-2.36,6.25,0,8.64,2.36,2.36,6.19,2.36,8.56,0l21.38-21.55,21.37,21.55c2.36,2.36,6.19,2.36,8.56,0,2.36-2.39,2.36-6.25,0-8.64l-25.65-25.85Z"/></g></g></svg>        
-                                100%</div>                            
+                                <span class="number number_count" data-number="100">100</span>%</div>                            
                                 <span>De Crecimiento</span>
                             </div>
                             <div class="item">
                                 <span>y un Roas de</span>
-                                <div class="number">402</div>
+                                <div class="number"><span class="number number_count" data-number="402">402</span>%</div>
                             </div>
                         </div>
                         <div class="description">
@@ -269,106 +269,102 @@ get_header();
                         <h2 class="heading-title heading-title">Y ellos también han crecido en nosotros</h2>
                     </div> 
 
-                    <div class="container-clients big">
-                        <div class="item">
-                            <a href="https://www.comfenalcoantioquia.com.co/personas" rel="follow" title="Comfenalco antioquia" >
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/comfenalco_logo.png" width="200px" alt="Servicios integrales en educación, turismo, vivienda, compensación familiar, cultura y programas pensados para llevar bienestar a ti y a tu familia.">
-                            </a>
-                        </div>                            
-                        <div class="item">
-                            <a href="https://camaralucida.com/" rel="follow" title="Camara Lucida">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/camara_logo.png" width="200px" alt="Cámara Lúcida la primera agencia audiovisual del país. 25 años en el mercado, líderes en foto y video, streaming, recorrido virtual, tour 360, foto de producto.">
-                            </a>
-                        </div>                            
-                        <div class="item">
-                            <a href="https://udemedellin.edu.co/" target="_blank" rel="follow" title="Universidad de medellín">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/universidadMedellin_logo.png" width="200px" alt="Universidad acreditada en alta calidad académica, en investigación e innovación. Ubicada en la ciudad de Medellín, Antioquia.">
-                            </a>
-                        </div>                            
-                        <div class="item">
-                            <a href="https://www.unilibre.edu.co/" target="_blank" rel="follow"  title="Universidad Libre">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/universidadlibre_logo.png" width="200px" alt="Universidad Libre">
-                            </a>
-                        </div>                            
-                        <div class="item">
-                            <a href="https://confecoop.coop/" title="Confecoop">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/confecoop_logo.png" width="200px" alt="Confecoop">
-                            </a>
-                        </div>                            
-                    </div>  
-
-                    <div class="container-clients medium">
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/cootramed_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/confamigos_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/coogranada_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/lachiva_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/confamigos_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/sinergia_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/smartall_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/truccos_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/asisea_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/ferttes_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/odontologos_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/alquile_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/optiferros_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                        <div class="item">
-                            <a href="" title="">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/muta_logo.png" width="100px" alt="">
-                            </a>
-                        </div>                               
-                    </div>                   
+                    <div class="content-clients">
+                        <div class="container-clients big">
+                            <div class="item">
+                                <a href="https://www.comfenalcoantioquia.com.co/personas" target="_blank" rel="follow" title="Comfenalco antioquia" >
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/comfenalco_logo.png" width="200px" alt="Servicios integrales en educación, turismo, vivienda, compensación familiar, cultura y programas pensados para llevar bienestar a ti y a tu familia.">
+                                </a>
+                            </div>                            
+                            <div class="item">
+                                <a href="https://camaralucida.com/" target="_blank" rel="follow" title="Camara Lucida">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/camara_logo.png" width="200px" alt="Cámara Lúcida la primera agencia audiovisual del país. 25 años en el mercado, líderes en foto y video, streaming, recorrido virtual, tour 360, foto de producto.">
+                                </a>
+                            </div>                            
+                            <div class="item">
+                                <a href="https://udemedellin.edu.co/" target="_blank" rel="follow" title="Universidad de medellín">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/universidadMedellin_logo.png" width="200px" alt="Universidad acreditada en alta calidad académica, en investigación e innovación. Ubicada en la ciudad de Medellín, Antioquia.">
+                                </a>
+                            </div>                            
+                            <div class="item">
+                                <a href="https://www.unilibre.edu.co/" target="_blank" rel="follow"  title="Universidad Libre">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/universidadlibre_logo.png" width="200px" alt="Universidad Libre">
+                                </a>
+                            </div>                            
+                            <div class="item">
+                                <a href="https://confecoop.coop/" title="Confecoop">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/confecoop_logo.png" width="200px" alt="Confecoop">
+                                </a>
+                            </div>                            
+                        </div>  
+                        <div class="wrap_nav">
+                            <div class="nav prev" aria-label="Botón para volver al anterior banner"></div>
+                            <div class="nav next" aria-label="Botón para continuar con el siguiente banner"></div>
+                        </div>
+                    </div>
+                    <div class="content-clients">
+                        <div class="container-clients medium">
+                            <div class="item">
+                                <a href="https://www.cootramed.coop/" target="_blank" rel="follow"  title="Cootramed - Cooperativa de ahorro">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/cootramed_logo.png" width="100px" alt="COOTRAMED es una cooperativa dedicada a prestar servicios de  ahorro, crédito y solidaridad para satisfacer las necesidades de sus asociados.">
+                                </a>
+                            </div>                               
+                            <div class="item">
+                                <a href="https://www.comfamigos.coop/" target="_blank" rel="follow"  title="Confamigos">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/confamigos_logo.png" width="100px" alt="Cooperativa de ahorro y crédito">
+                                </a>
+                            </div>                               
+                            <div class="item">
+                                <a href="https://www.coogranada.coop/" target="_blank" rel="follow"  title="Coogranada">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/coogranada_logo.png" width="100px" alt="Cooperativa de Ahorro y Crédito con más de 59 años de experiencia, brindando servicio y beneficios a más de 85 mil asociados, en diferentes zonas del país.">
+                                </a>
+                            </div>                               
+                            <div class="item">
+                                <a href="https://lachivaalerta.com/" target="_blank" rel="follow"  title="La chiva alerta">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/lachiva_logo.png" width="100px" alt="Somos un medio de comunicación de trabajo colaborativo donde tú también eres el protagonista.">
+                                </a>
+                            </div>                                                             
+                            <div class="item">
+                                <a href="#" target="_blank" rel="follow"  title="">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/sinergia_logo.png" width="100px" alt="">
+                                </a>
+                            </div>                               
+                            <div class="item">
+                                <a href="https://www.misionempresarial.com/" ttarget="_blank" rel="follow"  title="Mision Empresarial">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/mision_logo.png" width="100px" alt="Misión Empresarial – Trabajamos para ti">
+                                </a>
+                            </div>                              
+                            <div class="item">
+                                <a href="https://www.conexusit.com/" ttarget="_blank" rel="follow"  title="Conexus IT">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/conexus_logo.png" width="100px" alt="Nómina electrónica - Conexus">
+                                </a>
+                            </div>                             
+                            <div class="item">
+                                <a href="https://smartall.mx/" ttarget="_blank" rel="follow"  title="Smart All">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/smartall_logo.png" width="100px" alt="Smart All | Automatización Residencial Y Comercial">
+                                </a>
+                            </div>                               
+                            <div class="item">
+                                <a href="https://truccos.com.co/" target="_blank" rel="follow"  title="Truccos Jeans">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/truccos_logo.png" width="100px" alt="Trucco's Jeans Colombianos - Las mejores prendas para mujer: Jeans, Chaquetas, Vestidos y mucho más disponibles para comprar online.">
+                                </a>
+                            </div>                           
+                            <div class="item">
+                                <a href="https://odontologosla73.com/" target="_blank" rel="follow"  title="Odontologos la 73">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/odontologos_logo.png" width="100px" alt=" Más de 30 años cuidando tu sonrisa. Diseño de sonrisa Ortodoncia. Endodoncia. Rehabilitación Oral. Prótesis en 24 horas">
+                                </a>
+                            </div>   
+                            <div class="item">
+                                <a href="https://mutamusic.com/" target="_blank" rel="follow"  title="Muta">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/clients/muta_logo.png" width="100px" alt="Muta musicos">
+                                </a>
+                            </div>                               
+                        </div>  
+                        <div class="wrap_nav">
+                            <div class="nav prev" aria-label="Botón para volver al anterior banner"></div>
+                            <div class="nav next" aria-label="Botón para continuar con el siguiente banner"></div>
+                        </div>
+                    </div>                 
                             
                 </div>            
             </section>

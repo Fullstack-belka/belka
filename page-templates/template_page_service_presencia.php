@@ -59,7 +59,7 @@ get_header();
 
             </section>
 
-            <section class="section-select-services container-section comunidad">
+            <section class="section-select-services container-section presencia">
                 <div class="title-plan-accion">
                     <h2>Ejecución <strong>Plan de Acción</strong></h2>
                 </div>
@@ -102,7 +102,8 @@ get_header();
                 </div>
             </section>
 
-
+            <?php get_template_part( 'page-templates/partials/contact' , 'presencia' );?>
+            
         </main>
     </div>
 </div>

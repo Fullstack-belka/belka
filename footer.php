@@ -54,7 +54,7 @@
                 <li><a class="<?= $post->ID == 58 ? 'active' : '' ?>" href="<?= get_permalink(58); ?>">Casos de éxito</a></li>
                 <li><a class="<?= $post->ID == 130 ? 'active' : '' ?>" href="<?= get_permalink(130); ?>">Servicios</a></li>
                 <li><a class="<?= $post->ID == 64 ? 'active' : '' ?>" href="<?= get_permalink(64); ?>">Contacto</a></li>
-                <li><a class="<?= $post->ID == 64 ? 'active' : '' ?>" href="<?= get_permalink(64); ?>">Blog</a></li>
+                <li><a class="<?= $post->ID == 1 ? 'active' : '' ?>" href="<?= get_permalink(18); ?>">Blog</a></li>
             </ul>
             <div class="newsletter">
                 <h3>Suscribirse al Newsletter</h3>

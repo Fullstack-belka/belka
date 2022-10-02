@@ -4,8 +4,6 @@ $b( document ).ready(function() {
   //$b('#primary-section .container-section').addClass('active')
 });
 
-var widthS = $b( document ).width();
-
 // TRIGER ANIMACION LOGO SECCION 1
 let primarySection = gsap.timeline({
   scrollTrigger: {
@@ -36,31 +34,31 @@ ScrollTrigger.create({
     toggleActions : "play none none reverse ",
 });
 
-
+if(widthS >= 900){
 
 /* PLANETA ANIMACION */
-gsap.utils.toArray("#secondary-section").forEach(section => {
-	let tl = gsap.timeline({
-			scrollTrigger: {
-				trigger: section,
-				start: "25% center",
-        // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
-				end: "bottom center", 
-        //end: () => "+=" + section.offsetHeight, 
-				scrub: true,
-        markes:false,
-        toggleClass: "active"
-			},
-			defaults: {ease: "none"}
-		});
-
-    tl.to( ".main-rocket" , { y:-300 } ,"someLabel" )
-    tl.to( ".content-earth" , { y:100 } ,"someLabel" )
-    tl.to(".main-rocket" , {xPercent:150,  y:300  , scaleX: 5,scaleY: 5});
-    tl.to("#secondary-section .content-earth" ,  {xPercent:-100,  y:0  , scaleX: 0.3,scaleY: 0.3} ,">-0.5"  );
-    tl.to(".main-rocket" , {xPercent:150,  y:600  , scaleX: 5,scaleY: 5});
-    tl.to(".main-rocket" , {xPercent:150,  y:600  , x:-500 , scaleX: 1,scaleY: 1} ,">-0.5"  );
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#secondary-section',
+    start: "25% center",
+    // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+    end: "bottom center", 
+    //end: () => "+=" + section.offsetHeight, 
+    scrub: true,
+    markes:false,
+    toggleClass: "active"
+  },
+  defaults: {ease: "none"}
 });
+
+tl.to( ".main-rocket" , { y:-300 } ,"someLabel" )
+tl.to( ".content-earth" , { y:100 } ,"someLabel" )
+tl.to(".main-rocket" , {xPercent:150,  y:300  , scaleX: 5,scaleY: 5});
+tl.to("#secondary-section .content-earth" ,  {xPercent:-100,  y:0  , scaleX: 0.3,scaleY: 0.3} ,">-0.5"  );
+tl.to(".main-rocket" , {xPercent:150,  y:600  , scaleX: 5,scaleY: 5});
+tl.to(".main-rocket" , {xPercent:150,  y:600  , x:-500 , scaleX: 1,scaleY: 1} ,">-0.5"  );
+
+
 /*ANIMACION OCULTAR PLANETA Y NAVE*/
 let lead_section = gsap.timeline({
   scrollTrigger: {
@@ -73,6 +71,35 @@ let lead_section = gsap.timeline({
   },
   
 });
+
+
+}else{
+
+/* PLANETA ANIMACION */
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#secondary-section',
+    start: "10% center",
+    // makes the height of the scrolling (while pinning) match the width, thus the speed remains constant (vertical/horizontal)
+    end: "bottom center", 
+    //end: () => "+=" + section.offsetHeight, 
+    scrub: true,
+    markes:false,
+    toggleClass: "active"
+  },
+  defaults: {ease: "none"}
+});
+
+tl.to("#secondary-section .main-rocket" , {className:"main-rocket ascending"},">-1" );
+tl.to("#secondary-section .main-rocket" , {className:"main-rocket ascending active"} );
+tl.to("#secondary-section" , {className:"active top"},">-1" );
+tl.to("#secondary-section .content-earth" , {className:"content-earth minimize"} );
+tl.to("#secondary-section .main-rocket" , {className:"main-rocket ascending big"} ,">-0.5" );
+tl.to("#secondary-section .content-earth" , {className:"content-earth minimize no-view"} ,">-0.5"  );
+tl.to("#secondary-section .main-rocket" ,  {className:"main-rocket ascending big normal"} );
+tl.to("#secondary-section .container-earth" , {className:"container-earth minimize"} ,">0.5");
+}
+
 /* ANIMACION SECCION LEAD*/
 let lead_section_show = gsap.timeline({
   scrollTrigger: {

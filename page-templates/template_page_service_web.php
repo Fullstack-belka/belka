@@ -100,8 +100,8 @@ get_header();
                     </div>
                 </div>
             </section>
-
-
+            
+            <?php get_template_part( 'page-templates/partials/contact' , 'web' );?>
 
         </main>
     </div>

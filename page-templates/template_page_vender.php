@@ -102,11 +102,6 @@ get_header();
                 </div>
             </section>
 
-            <div class="container-title">
-                <h2 class="heading-title heading-title">Contáctanos</h1>
-            </div>  
-
-
             <?php get_template_part( 'page-templates/partials/contact' , 'vender' );?>
 
         </main>

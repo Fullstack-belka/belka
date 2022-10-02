@@ -4,6 +4,9 @@ By JUAN ESTEBAN RAMIREZ
 
 
 ================================================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,400&display=swap');
+
 :root{
   --primary-belka:#EE0000;
   --secondary-belka:#E64B1A;
@@ -59,7 +62,7 @@ body.overflow{overflow: hidden;}
 
 
 /* HOME PRIMARY SECTION */
-.container-section{ text-align: center; min-height: 100vh;max-width: 1400px;   margin: auto; width: 100%; display: flex; padding: 90px 50px;align-items: center; opacity: 0; transition: .4s all;} 
+.container-section{ text-align: center; min-height: 75vh;max-width: 1400px;   margin: auto; width: 100%; display: flex; padding: 35px 50px;  align-items: center; opacity: 0; transition: .4s all;} 
 .container-section.full-w{max-width: none;} 
 .container-section.is-inview .heading-title{opacity: 1;}
 .container-section.is-inview{opacity: 1;}
@@ -108,7 +111,7 @@ select::focus{background-color: transparent; outline: unset; border: unset;}
 textarea{ resize: none;}
 input,
 textarea,
-select{background-color: transparent !important; outline: unset !important; border: unset;}
+select{background-color: transparent !important; outline: unset !important; border: none;}
 .form-group {margin-bottom: 1rem; text-align: left;}
 .form-group label{color: #fff; margin-bottom: .8rem;display: block; padding-left: 20px;}
 .form-control {display: block;width: 100%;padding: 0.375rem 0.75rem;font-size: 1rem;line-height: 1.5;color: #495057;background-color: #fff;background-clip: padding-box;border: 1px solid transparent;border-radius: 0.25rem;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
@@ -149,6 +152,7 @@ select{background-color: transparent !important; outline: unset !important; bord
 #main-header ul li.logo a.active,
 #main-header ul li.logo a:hover{background-color: unset;}
 #main-header .site-branding .custom-logo-link img{max-width: 125px;}
+#main-header .stars{position: absolute;height: 100vh; width: 0; transition: .4s all;}
 
 .container-toggle{position: absolute;width: 35px;height: 35px; margin: 0 10px;     border: 1px solid var(--primary-belka);padding: 5px;  animation: animationHamburguer .5s 1, linear; cursor: pointer; display: none; right: 30px; top:20px;}
 .menu_toggle {align-items: center; cursor: pointer; height: 30px; padding: 0 !important; width: 30px;}
@@ -222,7 +226,7 @@ select{background-color: transparent !important; outline: unset !important; bord
 .container-form .wpforms-submit.btn{margin-top: 1rem; background-color: var(--primary-belka) !important; border-color: transparent !important; text-transform: uppercase; color: white !important; border-radius: 30px !important; padding: 5px 30px !important; font-weight: bold;}
 .container-form .wpforms-submit.btn:hover {color: #fff !important;background: linear-gradient( 90deg, transparent,#ee0000a1) !important;border-color: var(--primary-belka) !important;}
 .container-form form .form-control.wpforms-field{text-align: left;}
-.container-form form .form-control .wpforms-field-medium{ max-width: 100% !important; background-color: transparent ; border: 1px solid transparent !important; border-bottom: 1px solid var(--primary-belka)  !important; width: 100%;}
+.container-form form .form-control .wpforms-field-medium{ max-width: 100% !important; background-color: transparent ; border: 1px solid transparent !important; border-bottom: 1px solid var(--primary-belka)  !important; width: 100%; }
 .container-form form .form-control textarea.wpforms-field-medium{ border: 1px solid var(--primary-belka) !important;}
 .container-form .wpforms-field-label{ color: white; font-weight: 300 !important;}
 .container-form .iti__country-name{color: black !important;}
@@ -257,7 +261,8 @@ div.wpforms-container-full .wpforms-form noscript.wpforms-error-noscript{color: 
 #planets-section .wrap_nav{display: none;}
 #planets-section .container-rocket{width: 30%; transform: translateX(-100vw); transition: .8s linear; }
 #planets-section.active .container-rocket{  transform: translateX(0);}
-#planets-section .container-rocket .container-image img{width: 100%; max-width: 350px;}
+#planets-section .container-rocket .container-image img{width: 100%; max-width: 350px; transform: scale(1.4); transition: .4s all;}
+#planets-section.is-inview .container-rocket .container-image img{transform: scale(1);}
 #planets-section .container-planets{display: flex; justify-content: center; flex-wrap: wrap; align-items: center; width: 70%; transform: translateX(100vw); transition: 1s all ease-in-out;  }
 #planets-section.active .container-planets{transform: translateX(0);}
 #planets-section .container-planets a{color: white; font-weight: 600; text-decoration: unset; text-align: center; transition: .4s all; display: block;}
@@ -273,6 +278,7 @@ div.wpforms-container-full .wpforms-form noscript.wpforms-error-noscript{color: 
 #planets-section .container-planets .planet-4{ align-self: flex-start;  transform: translateX(-80px) translateY(-40px);}
 #planets-section .container-planets .planet-5{ align-self: flex-end; transform: translateX(-40px) translateY(-120px);}
 #planets-section .container-planets .planet-6{ align-self: flex-end; transform: translateX(0) translateY(-40px);}
+
 
 
 .scroll-top.scroll-visible {
@@ -426,13 +432,15 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
 
 @media (max-width: 900px) {
 
-  #main-header{height: 0; z-index: 0;}
+  section{padding: 25px 15px;}
+
+  #main-header{height: 0; z-index: 1;}
   #main-header.open{z-index: 10;}
   #main-header::before{background-size: cover; height: 100px;}
   #main-header.active.scroll::before{height: 100px;}
   .container-section{padding: 35px 15px;}
   #main-header .container-toggle{display: block;}
-  #main-header .main-menu{height: 100vh;padding-top: 50px; transform: translateX(-100vw); transition: .4s all; background: linear-gradient(to bottom, #ee0000d4 , #0d0f1fb5);}
+  #main-header .main-menu{height: 100vh;padding-top: 50px; transform: translateX(-100vw); transition: .4s all; background: linear-gradient(to bottom,#0d0f1f85 50%, #ee0000d4);}
   #main-header.open .main-menu{transform: translateX(0);}
   #main-header.open .container-toggle{border: 1px solid white;}
   .open .container-toggle{border: 1px solid white;}
@@ -441,14 +449,13 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
   #main-header ul li{width: 100%; order: 2;}
   #main-header ul li.logo{order: 1;text-align: center;}
   #main-header ul li.logo a{display: inline-block; margin: auto;}
-  #main-header ul li a.active, #main-header ul li a:hover{border: 2px solid white;}
-  #main-header ul li a{background-color: transparent;border: 1px solid transparent;display: block;padding: 15px;border-bottom: 2px solid white;}
-
-  .wrap_nav{top: calc(75% - 30px);}
-  .wrap_nav .nav{height: 65px; padding: 10px;}
+  #main-header ul li a.active, #main-header ul li a:hover{border: 2px solid var(--primary-belka);}
+  #main-header ul li a{background-color: transparent;font-size: 1.4rem; border: 1px solid transparent;display: block;padding: 15px;border: 2px solid var(--primary-belka);}
+  #main-header.open .stars{width: 100%;}
+  .wrap_nav{top: calc(80% - 30px);}
+  .wrap_nav .nav{height: 56px; padding: 10px;}
   .wrap_nav .nav.next::before,
-  .wrap_nav .nav.prev::before{background-size: 46px; width: 46px; height: 46px;}
-
+  .wrap_nav .nav.prev::before{background-size: 32px; width: 32px; height: 32px;}
   #planets-section .container-rocket{transform: scale(4) translate(-100vw);  transition: 1s all ease-in-out; }
   #planets-section.active .container-rocket{transform: scale(1) translate(0);}
 
@@ -456,10 +463,13 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
   #planets-section .wrap_nav{display: flex;}
   #planets-section .container-rocket .container-image img{max-width: 250px;}
   #planets-section{flex-wrap: wrap;overflow: hidden;}
-  #planets-section .container-rocket{width: 100%; margin-bottom: 40px;}
+  #planets-section .container-rocket{width: 100%; margin-bottom: 0;}
   #planets-section .container-planets{width: 100%;}
   #planets-section .container-title .main-title{text-align: center;}
-  #planets-section .container-planets .planet{    transform: translateX(-0) translateY(0);}
+  #planets-section .container-planets{background: transparent url(../image/malla_servicios_movil.png) no-repeat center/ 100%;}
+  #planets-section .container-planets .planet{    transform: translateX(-0) translateY(0);transition: .4s all; position: relative;}
+  #planets-section .container-planets .planet::before{width: 100%;height: 400px;z-index: -1;content: '';background: transparent url(../image/planet_selection_line.svg) no-repeat center/ 100%;display: flex;position: absolute; transition: .4s all ; transition-delay: .4s; opacity: 0;}
+  #planets-section .container-planets .planet.slick-active::before{opacity: 1;}
   #planets-section .container-planets a h3{max-width: none; font-size: 1.4rem; position: absolute; bottom: 40px; width: 100%;}
   #planets-section .container-planets a img{width: 100%;}
   #planets-section .container-planets a img{max-width: 350px;}
@@ -467,6 +477,16 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
   .whatsapp-floating-button{right: 15px;}
 
   #contact-section{overflow: hidden;}
+  #contact-section .container-form{transform: scale(.5) translateX(-150vw);}
+  #contact-section .container-rocket{transform: translateX(100vw);}
+  #contact-section .container-rocket img{transform: scale(2); transition: .8s all ease-in;}
+  #contact-section.active .container-rocket{transform: translateX(100vw);}
+
+  #contact-section .container-rocket.active{transform: translateX(0);}
+  #contact-section .container-rocket.active img{transform: scale(1);}
+  #contact-section .container-form.active{transform: translateX(0);}
+
+
   #main-header .desktop{display: none;}
 
   footer{overflow: hidden; padding-bottom: 100px;}
@@ -485,7 +505,7 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
 
 
   footer .container-moon{    width: 100%; justify-content: flex-end;}
-  #planets-section{overflow: hidden;}
+  #planets-section{overflow: hidden; padding: 0;}
 
   
   #contact-section .container-rocket .pop-whatsapp{display: none;}

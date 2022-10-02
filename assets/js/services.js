@@ -12,21 +12,22 @@ let planets_activate = gsap.timeline({
     },
   });
 
+function slickServices(){
 
 //RESPONSIVE
 $b(".container-services").slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 500,
   slidesToShow: 3,
-  lazyLoad: 'ondemand',
+  centerMode: true,
   autoplay: true,
   slidesToScroll: 3,
   nextArrow: jQuery(this).parent().find('.next'),
   prevArrow:  jQuery(this).parent().find('.prev'),
   responsive: [
     {
-      breakpoint: 5000,
+      breakpoint: 10000,
       settings: "unslick"
     },
     {
@@ -36,8 +37,21 @@ $b(".container-services").slick({
         slidesToScroll:3
       }
     },
+    {
+      breakpoint: 725,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll:2
+      }
+    }
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
   ]
+});
+
+}
+
+$b(document).ready(function() {
+  slickServices();
 });

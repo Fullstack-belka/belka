@@ -59,76 +59,106 @@ get_header();
                         <h2 class="main-title" >Este es el <strong>#belkateam</strong></h2>            
                         <p>Y otros <strong>30 tripulantes</strong> más</p>
                     </div>  
-                    
-                    <div class="container-team">
+                    <div class="content-team">
+                        <div class="container-team">
 
 
-                        <div class="person juanpa">
-                            <div class="content">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanpa.png" width="250px" alt="Dani Project Managment">
-                                </figure>
-                                <div class="title-person">
-                                    <h3>Juanpa</h3>
-                                    <p>CEO - Estrategy</p>
+                            <div class="person juanpa">
+                                <div class="content">
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanpa.png" width="250px" alt="Dani Project Managment">
+                                    </figure>
+                                    <div class="title-person">
+                                        <h3>Juanpa</h3>
+                                        <p>CEO - Estrategy</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person juanes">
+                                <div class="content">
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanes.png" width="200px" alt="Dani Project Managment">
+                                    </figure>
+                                    <div class="title-person">
+                                        <h3>Juanes</h3>
+                                        <p>Fullstack Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person daniq">
+                                <div class="content">
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_daniq.png" width="200px" alt="Dani Project Managment">
+                                    </figure>
+                                    <div class="title-person">
+                                        <h3>Daniel</h3>
+                                        <p>Filmaker</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person dani">
+                                <div class="content">
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_dani.png" width="100px" alt="Dani Project Managment">
+                                    </figure>
+                                    <div class="title-person">
+                                        <h3>Dani</h3>
+                                        <p>Project Managment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="person mafe">
+                                <div class="content">
+                                    <div class="title-person">
+                                        <h3>Mafe</h3>
+                                        <p>Administration</p>
+                                    </div>
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_mafe.png" width="100px" alt="Mafe Administration">
+                                    </figure>
+                            
+                                </div>
+                            </div>
+                            <div class="person cami">
+                                <div class="content">
+                                    <div class="title-person">
+                                        <h3>Cami</h3>
+                                        <p>Analista de Pauta</p>
+                                    </div>
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_cami.png" width="100px" alt="Dani Project Managment">
+                                    </figure>
+
+                                </div>
+                            </div>
+                            <div class="person will">
+                                <div class="content">
+                                    <div class="title-person">
+                                        <h3>Will</h3>
+                                        <p>Content Manager</p>
+                                    </div>
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_will.png" width="100px" alt="Dani Project Managment">
+                                    </figure>
+                            
+                                </div>
+                            </div>
+        
+                            <div class="person aleja">
+                                <div class="content">
+                                    <figure>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_aleja.png" width="100px" alt="Dani Project Managment">
+                                    </figure>
+                                    <div class="title-person">
+                                        <h3>Aleja</h3>
+                                        <p>CGO</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="person juanes">
-                            <div class="content">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanes.png" width="200px" alt="Dani Project Managment">
-                                </figure>
-                                <div class="title-person">
-                                    <h3>Juanes</h3>
-                                    <p>Fullstack Developer</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person dani">
-                            <div class="content">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_dani.png" width="350px" alt="Dani Project Managment">
-                                </figure>
-                                <div class="title-person">
-                                    <h3>Dani</h3>
-                                    <p>Project Managment</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person cami">
-                            <div class="content">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_aleja.png" width="100px" alt="Dani Project Managment">
-                                </figure>
-                                <div class="title-person">
-                                    <h3>Cami</h3>
-                                    <p>Analista de Pauta</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="person will">
-                            <div class="content">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_will.png" width="100px" alt="Dani Project Managment">
-                                </figure>
-                                <div class="title-person">
-                                    <h3>Will</h3>
-                                    <p>Content Manager</p>
-                                </div>
-                            </div>
-                        </div>
-     
-                        <div class="person aleja">
-                            <div class="content">
-                                <figure>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_aleja.png" width="100px" alt="Dani Project Managment">
-                                </figure>
-                                <div class="title-person">
-                                    <h3>Aleja</h3>
-                                    <p>CGO</p>
-                                </div>
-                            </div>
+                        <div class="wrap_nav">
+                            <div class="nav prev" aria-label="Botón para volver al anterior banner"></div>
+                            <div class="nav next" aria-label="Botón para continuar con el siguiente banner"></div>
                         </div>
                     </div>
                 </div>

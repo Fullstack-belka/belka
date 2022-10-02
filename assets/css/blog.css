@@ -1,0 +1,99 @@
+/* ============================================================================================== 
+Artist Jera_Code
+By JUAN ESTEBAN RAMIREZ
+================================================================================================= */
+#section-blog {background-color: white;}
+#section-blog .container-section{opacity: 1; min-height: 0;}
+#section-blog .container-post{display: flex; justify-content: flex-start; flex-wrap: wrap; width: 100%;}
+#section-blog .container-post .post{width: 33.33%; transition: .4s all;position: relative;border: 1px solid #e9ecef;padding: 40px;margin-top: -1px;margin-left: -1px;-webkit-transition: 0.2s;transition: 0.2s;background: #fff; text-align: left;}
+#section-blog .container-post .post:hover{    -webkit-box-shadow: 0 0 40px 0 rgb(0 0 0 / 8%);box-shadow: 0 0 40px 0 rgb(0 0 0 / 8%);z-index: 1;}
+#section-blog .container-post .post .entry-title{font-size: 1.85rem; font-weight: 400;}
+#section-blog .container-post .post .entry-meta{margin-bottom: 10px; font-size: .8rem;}
+#section-blog .container-post .post .entry-excerpt{font-size: 1rem; font-weight: 400;}
+#section-blog .container-post .post .entry-footer .cat-links{display: flex; flex-wrap: wrap; margin-top: 10px;}
+#section-blog .container-post .post .entry-footer .edit-link{margin: 10px; font-size: .7rem; color: var(--primary-belka);}
+#section-blog .container-post .post .entry-footer .cat-links a{border-radius: 10px; font-size: .8rem; margin: 5px; padding: 10px; background-color: var(--primary-belka); color: white; font-weight: 600;}
+#section-blog .container-post .post .entry-footer .comments-link a{font-size: .7rem; margin-top: 10px;}
+#section-blog .container-post .post .updated{display: none;}
+
+#section-blog-post{background: white; color: #333;}
+#section-blog-post article.post {text-align: left;}
+#section-blog-post article.post figure img{margin: auto;}
+#section-blog-post .container-section{max-width: 900px; display: block; font-size: 1.5rem; opacity: 1; word-break: break-word;}
+
+#section-featured-blog{ background: linear-gradient( 0deg, #cb0317ba , transparent);}
+#section-featured-blog .container-section{min-height: 0; opacity: 1; flex-wrap: wrap;}
+#section-featured-blog .entry-featured h1{color: white; font-size: 2.4rem; text-align: left;}
+#section-featured-blog .entry-featured h1 a{color: inherit; transition: .4s all;}
+#section-featured-blog .entry-featured h1 a:hover{opacity: .7;}
+#section-featured-blog .entry-featured .the-content{color:white; text-align: left; font-size: 1.2rem;}
+#section-featured-blog .entry-featured .the-content *{color: white; }
+#section-featured-blog .entry-featured{width: 60%;}
+
+#section-featured-blog .entry-more-featured{width: 40%;}
+#section-featured-blog .entry-more-featured{border: 1px solid var(--primary-belka); border-radius: 10px; padding: 15px 25px; position: relative; transition: .5s all; }
+#section-featured-blog .entry-more-featured .container{background-image: linear-gradient( 90deg, #ee0000a1,transparent) ; opacity:1; border: 1px solid var(--primary-belka); border-radius: 10px; padding: 40px 25px;}
+#section-featured-blog .entry-more-featured .container .post-heading{text-align: left;font-size: 1.2rem; }
+#section-featured-blog .entry-more-featured .container .post-heading a{color: white; font-weight: 400; text-align: left;}
+
+
+
+.post-thumbnail{max-width: 100%;}
+.post-thumbnail img{max-width: 100%;}
+
+.site-main.main-content{ padding-top: 100px; }
+.site-main.main-content.single{ padding-top: 80px; }
+.site-main.main-content *{color: #333;}
+#comments
+ol,
+#comments .comment-list{list-style-type: none; padding: 0;}
+
+#comments .comment-list ol.children{padding-left: 30px;margin-top: 25px;}
+#comments .comment-list footer{background: unset; display: block;}
+#comments .comment{margin-bottom: 20px; border-bottom: 1px solid var(--primary-belka); padding-bottom: 20px;}
+#comments .comment .comment-metadata{margin-top: 10px;}
+
+
+
+#comments{border: 1px solid var(--primary-belka); border-radius: 10px; text-align: left; padding: 25px 15px; margin-top: 30px; font-size: 1rem;}
+#comments label{font-size: 1rem; display: block; margin-bottom: 15px;}
+#comments .comment-notes{font-size: 1rem;}
+#comments p .comment-form{display: block;}
+#comments .comment-form-cookies-consent{}
+
+#comments .comment-author.vcard{display: flex; align-items: center;}
+#comments .comment-author.vcard img{margin-right: 20px; border-radius: 50%;}
+#comments .comment-author.vcard .says{margin-left: 10px;}
+
+#comments textarea{border: 1px solid var(--primary-belka); border-radius: 5px; width: 100%;}
+#comments input:not([type='submit']),
+#comments select{border-bottom: 1px solid var(--primary-belka); width: 100%;}
+#comments .reply .comment-reply-link{background-color: var(--primary-belka) !important; border-radius: 20px; padding: 5px 20px; color: white; font-size: .8rem;}
+
+
+#comments .form-submit{text-align: center;}
+#comments input[type='submit']{background-color: var(--primary-belka) !important; border-radius: 20px; padding: 10px 20px; color: white;}
+
+.reply .comment-reply-link:hover,
+#comments input[type='submit']:hover{background-color: var(--secondary-belka) !important; cursor: pointer;}
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 900px) {
+
+    .single .site-main.main-content.single,
+    .blog .site-main.main-content{padding-top: 30px;}
+
+    #section-featured-blog{padding: 0 15px;}
+    #section-featured-blog .entry-featured{width: 100%; margin-bottom: 35px;}
+    #section-featured-blog .entry-featured h1{font-size: 2rem;}
+    #section-featured-blog .entry-more-featured .post-title{margin-bottom: 20px;}
+    
+    #section-featured-blog .entry-more-featured{width: 100%;}
+    #section-blog .container-post .post{width: 100%;}
+
+    #section-blog-post .container-section{font-size: 1.2rem;}
+    #section-blog-post .container-section .post-thumbnail img{height: auto;}
+
+}
+  

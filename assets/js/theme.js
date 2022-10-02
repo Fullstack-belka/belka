@@ -1,6 +1,7 @@
 'use strict';
 var $b = jQuery.noConflict();
 
+var widthS = $b( document ).width();
 
 let scroll_header = gsap.timeline({
     scrollTrigger: {
@@ -15,13 +16,16 @@ let scroll_header = gsap.timeline({
 });
 
 
+
+
+
       
 // ANIMACIONES SECCIONES
 gsap.utils.toArray(".container-section").forEach(section => {
 	let tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: section,
-        start: "0% 45%",
+        start: "top 45%",
         end:  "110% 45%" ,
 				//toggleActions: "play none reverse none",
         scrub: false,
@@ -49,18 +53,52 @@ let tlWhatsapp = gsap.timeline({
 
 tlWhatsapp.to("#whatsAppFloatingButton" , {className:"+=whatsapp-floating-button active"} ,">-0.5"  );
 
+if(jQuery('#contact-section').length > 0){
 
-/* ANIMACION CONTACT FORM*/
-let contact_animation = gsap.timeline({
-  scrollTrigger: {
-    trigger: '#contact-section',
-    start: "-10% center",
-    end: '120% center',
-    markers: false,
-    scrub: 0,
-  },
-});
-contact_animation.to("#contact-section" , {className:"+=active"} );
+
+  
+  /* ANIMACION CONTACT FORM*/
+  let contact_animation = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#contact-section',
+      start: "-10% center",
+      end: '120% center',
+      markers: false,
+      scrub: 0,
+    },
+  });
+  contact_animation.to("#contact-section" , {className:"+=active"} );
+
+
+  if(widthS <= 900){
+    /* ANIMACION CONTACT FORM*/
+    let contact_form_animation = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#contact-section .container-form',
+        start: "-30% center",
+        end: '150% center',
+        markers: false,
+        scrub: 0,
+        toggleClass: "active",
+        toggleActions : "play none none reverse ",
+      },
+    });
+  
+    /* ANIMACION CONTACT FORM*/
+    let contact_rocket_animation = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#contact-section .container-rocket',
+        start: "-30% center",
+        end: '150% center',
+        markers: false,
+        scrub: 0,
+        toggleClass: "active",
+        toggleActions : "play none none reverse ",
+      },
+    });
+  }
+  
+}
 
 /*------------------------------------
   SCROLL TOP
@@ -160,7 +198,7 @@ $b(document).ready(function() {
   toggleMenuHeader();
 });
 
-//RESPONSIVE
+//RESPONSIVE PLANETS
 $b(".container-planets").slick({
   dots: false,
   infinite: true,

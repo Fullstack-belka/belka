@@ -42,7 +42,7 @@ By JUAN ESTEBAN RAMIREZ
 #primary-section .container-title{width: 100%;}
 #primary-section .container-title h1{font-weight: 100; font-size: 3rem; text-align: center;}
 #primary-section .container-title h1 strong{ font-size: 3rem; font-weight: 900; }
-#primary-section.container-section{display: block; min-height: 0;}
+#primary-section.container-section{display: flex;flex-wrap: wrap;justify-content: center;align-items: center; padding-top: 100px;}
 #primary-section .container{display: flex; align-items: center; justify-content: center;}
 #primary-section .container figure {position: relative;margin: 0;}
 #primary-section .container figure img{transition: .6s all; transform: translateX(100vw);}
@@ -86,7 +86,6 @@ By JUAN ESTEBAN RAMIREZ
 #clientes-section .cliente.is-inview .title-section .container-title h3{transform: scaleX(1);}
 #clientes-section .cliente.is-inview .title-section .logo{opacity: 1;}
 #clientes-section .cliente.is-inview .title-section .container-title .spaceship{transform: translate(0);}
-
 #clientes-section .cliente .description{text-align: left; margin-bottom: 30px;font-size: 1.6rem; text-align: right;}
 #clientes-section .cliente span{font-weight: 600; font-size: 1.4rem; margin: 10px 0px; font-style: italic;display: block; text-align: right;}
 #clientes-section .cliente .cifras{display: flex; flex-wrap: wrap; justify-content: flex-end;}
@@ -135,6 +134,8 @@ By JUAN ESTEBAN RAMIREZ
 #clientes-section .cliente.fou .link span{border-color: var(--var-fou); background: linear-gradient(to left, var(--var-fou) , transparent)}
 #clientes-section .cliente.fou .link a .icon{fill: var(--var-fou);}
 #clientes-section .cliente.fou .cifras .item .number svg{fill: var(--var-fou);}
+#clientes-section .cliente.fou{margin-bottom: 2rem;}
+
 
 #video-section .container-section{justify-content: center; flex-wrap: wrap;}
 #video-section .container-title{width: 100%; margin-bottom: 6rem; font-size: 3rem; font-style: italic;}
@@ -150,20 +151,21 @@ By JUAN ESTEBAN RAMIREZ
 #video-section .container-video .capsule.capsule-1{top: -75px; left: -75px;}
 #video-section .container-video .capsule.capsule-2{bottom: -75px; right: -75px;}
 
-
 #more-clients-section{background: url('../image/services/malla_servicios.svg') no-repeat bottom center / 100%;}
-#more-clients-section .container-section{justify-content: center; flex-wrap: wrap;}
+#more-clients-section .container-section{justify-content: center; flex-wrap: wrap; padding-top: 20px;}
 #more-clients-section .container-title{width: 100%; margin-bottom: 6rem; font-size: 2rem; font-style: italic;}
+#more-clients-section .content-clients{position: relative;}
 #more-clients-section .container-clients{display: flex; flex-wrap: wrap; width: 100%; justify-content: center; flex-wrap: wrap;}
 #more-clients-section .container-clients .item{width: calc(20% - 20px);padding: 5px; margin: 10px; border: 1px solid var(--primary-belka); background: linear-gradient(to top, #ee00006b , transparent); border-radius: 20px;}
 #more-clients-section .container-clients .item img{width: 100%;}
-
 #more-clients-section .container-clients.medium .item{width: calc(12% - 20px);}
+#more-clients-section .wrap_nav{opacity: 0; display: none;}
 
 @media (max-width: 1200px) {
 
   #more-clients-section .container-clients .item{width: calc(33.3% - 20px);}
   #more-clients-section .container-clients.medium .item{width: calc(33.3% - 20px);}
+  #video-section .container-video{width: 100%;}
 
 }
 
@@ -171,10 +173,9 @@ By JUAN ESTEBAN RAMIREZ
 
   #primary-section .container-title h1,
   #primary-section .container-title h1 strong{font-size: 2rem;}
-
   #primary-section .container figure img{max-width: 300px;}
-  #video-section .container-video{width: 100%;}
 
+  #more-clients-section{padding: 30px 15px;}
   #more-clients-section .container-title{font-size: 1.4rem;}
   
   #clientes-section .cliente .title-section .container-title h3{font-size: 1.8rem;}
@@ -182,21 +183,44 @@ By JUAN ESTEBAN RAMIREZ
   #clientes-section .cliente .title-section .container-title .spaceship img{max-width: 150px;}
   #clientes-section .cliente .content-section{width: 90%;}
   #clientes-section .cliente .title-section{flex-wrap: wrap;}
-  #clientes-section .cliente.is-inview .title-section .logo{order: 1;}
+  #clientes-section .cliente .title-section .logo{order: 1;}
   #clientes-section .cliente .title-section .container-title{order: 2;}
 
-  #video-section .container-title{font-size: 2rem;}
+  #primary-section.container-section{ min-height: 100vh; }
 
+  #video-section .container-title{font-size: 2rem; margin-bottom: 0rem;}
+  #video-section .container-section{padding: 0;}
+  
+  #more-clients-section .container-section{padding: 0;}
+  #more-clients-section .container-title{margin-bottom: 2rem;}
 
+  #video-section .container-video .capsule img{max-width: 45px; width: 100%;}
+  #video-section .container-video .capsule.capsule-1{top: -40px; left: -40px;}
+  #video-section .container-video .capsule.capsule-2{bottom: -40px; right: -40px;}
 
+  #more-clients-section .wrap_nav{opacity: 1; transition: .4s all; display: flex;}
+  
 }
 @media (max-width: 725px) {
+  #clientes-section .cliente .title-section{    flex-direction: column;}
+  #clientes-section .cliente .title-section .container-title{order: 1;}
+  #clientes-section .cliente .title-section .logo{order: 2; margin: 25px 0px;}
+  #clientes-section .cliente .content-section{width: 100%}
+  #clientes-section .cliente span{text-align: center;}
+  #clientes-section .cliente .description p {text-align: center;}
+  #clientes-section .cliente:nth-child(2n) .cifras,
+  #clientes-section .cliente .cifras{justify-content: center;}
+  #clientes-section .cliente:nth-child(2n) .link,
+  #clientes-section .cliente .link{text-align: center;}
 
-  #more-clients-section .container-clients .item{width: calc(50% - 20px);}
-  #more-clients-section .container-clients.medium .item{width: calc(50% - 20px);}
+  #belkateam-section .container-team .person{width: 100% !important;}
+  
+}
 
+@media (max-width: 525px) {
 
-  #video-section .container-video .capsule img{max-width: 125px;}
+  #clientes-section .cliente.fou .title-section .container-title h3{font-size: 1.3rem;}
+
 }
 
 

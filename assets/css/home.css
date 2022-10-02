@@ -8,7 +8,7 @@ By JUAN ESTEBAN RAMIREZ
 /* HOME PRIMARY SECTION */
 #primary-section .container-section{flex-direction: column; text-align: center; justify-content: center; padding: 0; opacity: 0; transition: .8s all; transition-delay: .5s;}
 #primary-section .container-section.active{opacity: 1; }
-#primary-section h1{font-family: 'Raleway'; font-size: 3rem; font-weight: 200; color: white;}
+#primary-section h1{font-family: 'Raleway' , 'Rubik' , Helvetica; font-size: 3rem; font-weight: 200; color: white;}
 
 
 /* HOME SECONDARY SECTION */
@@ -21,11 +21,11 @@ By JUAN ESTEBAN RAMIREZ
 #secondary-section .main-rocket{transition: .8s ease;}
 #secondary-section .main-rocket.show-map{transform: translateX(100%) scale(5) !important;}
 #secondary-section.active .main-rocket.ascending{transition: .2s ease;}
-#secondary-section .content-earth{position: relative; padding-top: 40px;}
+#secondary-section .content-earth{position: relative; padding-top: 40px; display: flex; justify-content: center;}
 #secondary-section .earth {width: 1000px;height: 1000px;transition: .4s ease-out; position: relative;top: 0;bottom: 0;z-index: 1;left: 0;right: 0;margin: auto;overflow: hidden;border-radius: 50%;box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #0000001f;}
 #secondary-section .earth:after {position: absolute;content: "";top: 0;bottom: 0;left: 0;right: 0;box-shadow: -20px -20px 50px 2px #000 inset;border-radius: 50%;}
 #secondary-section .earth > .circle {width: 200%;height: 100%;animation: spin-earth 60s linear alternate infinite;background: url(../image/earth_home.jpg);background-size: cover;}
-#secondary-section .atmosfera{background: radial-gradient(circle, #ffffff 0%, #1c6d76 50%, #00d4ff00 60% );transition: .4s ease-in;border-radius: 50%;position: absolute;height:  90%;left: 0;top: -20px;right: 0;}
+#secondary-section .atmosfera{background: radial-gradient(circle, #ffffff 0%, #1c6d76 50%, #00d4ff00 60% );transition: .4s ease-in;border-radius: 50%;position: absolute;height:  90%;top: -20px;width: 100%;max-width: 1250px;max-height: 1250px;}
 
   @keyframes spin-earth {
     to {
@@ -101,14 +101,25 @@ By JUAN ESTEBAN RAMIREZ
   
 
   
-  #secondary-section{overflow-x: hidden;}
-  #secondary-section .container-earth.minimize{    transform: translateY(400px) translateX(-100vw) scale(.4)}
-  #secondary-section .earth{width: 100%; height: 400px;}
+  #secondary-section{ padding: 0; overflow: hidden;}
+  #secondary-section.top{padding-bottom: 0;}
+  #secondary-section.active .container-earth{transform: translateY(200px); transition-delay: .4s; }
+  #secondary-section .container-earth{transform: translate(0);transition: 1s all;}
+  #secondary-section .container-earth.minimize{ transform: translateY(200px) translateX(-100vw) scale(.4)}
+  #secondary-section .atmosfera{top: -8%;width: 800px;height: 800px;transition: .4s all;} 
+  #secondary-section .earth{width: 600px;height: 600px;position: absolute;left: unset;align-self: center;right: unset;margin: auto; transition: 1s all;}
+  #secondary-section .content-earth{position: relative;padding-top: 40px;display: flex;justify-content: center;width: 100%;height: 700px; transition: .5s all ease;}
+  #secondary-section .main-rocket{transform: translateY(100px) scale(.7);}
+  #secondary-section.active .main-rocket{ transition: .4s all}
+  #secondary-section.active .main-rocket.ascending{transform: translateY(-10%);  transition: .6s all}
+  #secondary-section.active .main-rocket.big{transform: translateY(300px) translateX(150%) scale(3); ;}
+  #secondary-section.active .main-rocket.big.normal{transform: translateY(400px) translateX(10%) scale(1);}
+  #secondary-section .content-earth.minimize{transform: translateY(10%);}
+  #secondary-section .content-earth.minimize.no-view{transform: scale(.3) translateY(0) translateX(-250%);}
+  /*#secondary-section .content-earth.minimize .earth{width: 400px; height: 400px;}
+  #secondary-section .content-earth.minimize .atmosfera{ width: 600px; height: 600px; top: 10%; }*/
 
-  #lead-section .container-section{display: none;}
-  #lead-section .container-title{transition-delay: 0s;}
-
-  #lead-section .container-rocket
+  #lead-section{display: none;}
 
   #fourth-section{overflow: hidden;}
   #contact-section .container-rocket .pop-whatsapp{display: none;}
@@ -118,8 +129,8 @@ By JUAN ESTEBAN RAMIREZ
   #contact-section .container-form .capsule{ max-width: 45px;}
 
   #planets-section .container-title .main-title{font-size: 2rem;}
-  #fourth-section .black-hole-img{position: fixed;}
-  #fourth-section .black-hole-img img{transform: scale(1); top: -30px;}
+  #fourth-section .black-hole-img{position: fixed; top: -50px;}
+  #fourth-section .black-hole-img img{transform: scale(.7); top: -30px;}
   #fourth-section .astronauta-img{position: fixed; bottom: 0;}
   #fourth-section .astronauta-img img{transform: scale(1);}
 
@@ -135,6 +146,8 @@ By JUAN ESTEBAN RAMIREZ
 }
 
 @media (max-width: 450px) {
+
+  
   
   #primary-section h1{font-size: 1.5rem;}
   #primary-section .container-section img{max-width: 250px;}

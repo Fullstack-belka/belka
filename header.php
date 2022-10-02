@@ -38,6 +38,7 @@
 				<li><a class="<?= $post->ID == 130 ? 'active' : '' ?>" href="<?= get_permalink(130); ?>">Servicios</a></li>
 				<li><a class="<?= $post->ID == 64 ? 'active' : '' ?>" href="<?= get_permalink(64); ?>">Contacto</a></li>
 			</ul>
+			
 		</div>
 
 		<div class="container-toggle">
@@ -45,4 +46,5 @@
             <span class="menu_toggle"><span></span></span>
             </a>
         </div>
+		<div class="stars"></div>
 	</header>

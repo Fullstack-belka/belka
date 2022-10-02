@@ -38,44 +38,107 @@ By JUAN ESTEBAN RAMIREZ
 .leads #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#BEB420);border: 1px solid #BEB420;}
 .leads #whatsAppFloatingButton::hover{    background-color: #BEB420;}
 .leads #contact-section{ background-image: linear-gradient( to top, #bcb2218c,transparent);}
-.leads #contact-section.active .container-form{border: 1px solid #BCB221;}
+.leads #contact-section .container-form{border: 1px solid #BCB221;}
 .leads .container-form form{border: 1px solid #BCB221;     background-image: linear-gradient( 90deg, #BCB221,transparent);}
 .leads .container-form form .form-control{border-bottom-color: #BCB221;}
 .leads .container-form form textarea.form-control{border-color: #BCB221;}
 .leads .container-form .btn{background-color: #BCB221;}
+.leads #contact-section .container-form textarea{border:1px solid #BCB221 !important;}
+.leads .container-form form .form-control .wpforms-field-medium,
+.leads #contact-section .container-form input{border-bottom: 1px solid #BCB221 !important;}
+
+.web #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#BEB420);border: 1px solid #BEB420;}
+.web #whatsAppFloatingButton::hover{    background-color: #BEB420;}
+.web #contact-section{ background-image: linear-gradient( to top, #8725858c,transparent);}
+.web #contact-section .container-form{border: 1px solid #872585;}
+.web .container-form form{border: 1px solid #872585;     background-image: linear-gradient( 90deg, #872585,transparent);}
+.web .container-form form .form-control{border-bottom-color: #872585;}
+.web .container-form form textarea.form-control{border-color: #872585;}
+.web .container-form .btn{background-color: #872585;}
+.web #contact-section .container-form textarea{border:1px solid #872585 !important;}
+.web .container-form form .form-control .wpforms-field-medium,
+.web #contact-section .container-form input{border-bottom: 1px solid #872585 !important;}
+
+.comunidad #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#23A069);border: 1px solid #23A069;}
+.comunidad #whatsAppFloatingButton::hover{    background-color: #23A069;}
+.comunidad #contact-section{ background-image: linear-gradient( to top, #23A0698c,transparent);}
+.comunidad #contact-section .container-form{border: 1px solid #23A069;}
+.comunidad .container-form form{border: 1px solid #23A069;     background-image: linear-gradient( 90deg, #23A069,transparent);}
+.comunidad .container-form form .form-control{border-bottom-color: #23A069;}
+.comunidad .container-form form textarea.form-control{border-color: #23A069;}
+.comunidad .container-form .btn{background-color: #23A069;}
+.comunidad #contact-section .container-form textarea{border:1px solid #23A069 !important;}
+.comunidad .container-form form .form-control .wpforms-field-medium,
+.comunidad #contact-section .container-form input{border-bottom: 1px solid #23A069 !important;}
+
+.vender #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#FCB9D2);border: 1px solid #FCB9D2;}
+.vender #whatsAppFloatingButton::hover{    background-color: #FCB9D2;}
+.vender #contact-section{ background-image: linear-gradient( to top, #FCB9D28c,transparent);}
+.vender #contact-section .container-form{border: 1px solid #FCB9D2;}
+.vender .container-form form{border: 1px solid #FCB9D2;     background-image: linear-gradient( 90deg, #FCB9D2,transparent);}
+.vender .container-form form .form-control{border-bottom-color: #FCB9D2;}
+.vender .container-form form textarea.form-control{border-color: #FCB9D2;}
+.vender .container-form .btn{background-color: #FCB9D2;}
+.vender #contact-section .container-form textarea{border:1px solid #FCB9D2 !important;}
+.vender .container-form form .form-control .wpforms-field-medium,
+.vender #contact-section .container-form input{border-bottom: 1px solid #FCB9D2 !important;}
+
+.presencia #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#B3BB33);border: 1px solid #B3BB33;}
+.presencia #whatsAppFloatingButton::hover{    background-color: #B3BB33;}
+.presencia #contact-section{ background-image: linear-gradient( to top, #B3BB338c,transparent);}
+.presencia #contact-section .container-form{border: 1px solid #B3BB33;}
+.presencia .container-form form{border: 1px solid #B3BB33;     background-image: linear-gradient( 90deg, #B3BB33,transparent);}
+.presencia .container-form form .form-control{border-bottom-color: #B3BB33;}
+.presencia .container-form form textarea.form-control{border-color: #B3BB33;}
+.presencia .container-form .btn{background-color: #B3BB33;}
+.presencia #contact-section .container-form textarea{border:1px solid #B3BB33 !important;}
+.presencia .container-form form .form-control .wpforms-field-medium,
+.presencia #contact-section .container-form input{border-bottom: 1px solid #B3BB33 !important;}
 
 
+.comercial #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#E55723);border: 1px solid #E55723;}
+.comercial #whatsAppFloatingButton::hover{    background-color: #E55723;}
+.comercial #contact-section{ background-image: linear-gradient( to top, #E557238c,transparent);}
+.comercial #contact-section .container-form{border: 1px solid #E55723;}
+.comercial .container-form form{border: 1px solid #E55723;     background-image: linear-gradient( 90deg, #E55723,transparent);}
+.comercial .container-form form .form-control{border-bottom-color: #E55723;}
+.comercial .container-form form textarea.form-control{border-color: #E55723;}
+.comercial .container-form .btn{background-color: #E55723;}
+.comercial #contact-section .container-form textarea{border:1px solid #E55723 !important;}
+.comercial .container-form form .form-control .wpforms-field-medium,
+.comercial #contact-section .container-form input{border-bottom: 1px solid #E55723 !important;}
+
+
+
+/* COMUNIDAD */
+.section-select-services.container-section.comunidad{ background: url('../image/services/comunidad/malla_comunidad.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.comunidad .metodologia-section{margin-top: -175px;}
+
+/* COMERCIAL */
+.section-select-services.container-section.comercial{ background: url('../image/services/comercial/malla_comercial.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.comercial .metodologia-section{margin-top: -175px;}
+
+/* PRESENCIA */
+.section-select-services.container-section.presencia{ background: url('../image/services/presencia_digital/malla_presencia_digital.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.presencia .metodologia-section{margin-top: -175px;}
+
+#page.services p{font-size: 2rem;}
+#section-introduction-planet{display: flex; align-items: center; text-align: left; flex-wrap: wrap; position: relative; z-index: -1;}
+#section-introduction-planet .main-title{padding: 10px 20px; padding-left: 100px; margin-left: -110px; margin-bottom: 35px; background-color: var(--secondary-belka); color: white; transform: translateX(-20px) skewX(-10deg); border-radius: 10px; display: inline-flex;}
+#section-introduction-planet .main-title h1{margin: 0;}
+#section-introduction-planet .content{width: 60%;}
+#section-introduction-planet .planet{width: 40%;position: relative;height: 100%;}
+#section-introduction-planet .planet figure{display: flex;justify-content: flex-start;align-items: center;}
+#section-introduction-planet .planet figure img{position: fixed; left: 60%; z-index: -1;} 
 #section-introduction-planet .title-lead{display: flex; align-items: center;}
 #section-introduction-planet .title-lead h2{font-size: 2rem; font-weight: 600;}
 #section-introduction-planet .goals{display: flex; flex-wrap: wrap; justify-content: center;}
 #section-introduction-planet .goals .item{width: 250px;text-align: center; }
 #section-introduction-planet .goals .item p{font-size: 1.5rem;}
 
-/* COMUNIDAD */
-.section-select-services.container-section.comunidad{ background: url('../image/services/comunidad/malla_comunidad.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
-.comunidad .metodologia-section{margin-top: -250px;}
-
-/* COMERCIAL */
-.section-select-services.container-section.comercial{ background: url('../image/services/comercial/malla_comercial.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
-.comercial .metodologia-section{margin-top: -250px;}
-
-/* PRESENCIA */
-.section-select-services.container-section.presencia{ background: url('../image/services/presencia_digital/malla_presencia_digital.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
-.presencia .metodologia-section{margin-top: -250px;}
-
-#page.services p{font-size: 2rem;}
-#section-introduction-planet{display: flex; align-items: center; text-align: left; flex-wrap: wrap;}
-#section-introduction-planet .main-title{padding: 10px 20px; padding-left: 100px; margin-left: -110px; margin-bottom: 35px; background-color: var(--secondary-belka); color: white; transform: translateX(-20px) skewX(-10deg); border-radius: 10px; display: inline-flex;}
-#section-introduction-planet .main-title h1{margin: 0;}
-#section-introduction-planet .content{width: 60%;}
-#section-introduction-planet .planet{width: 40%;position: relative;height: 100%;}
-#section-introduction-planet .planet figure{display: flex;justify-content: flex-start;align-items: center;}
-#section-introduction-planet .planet figure img{position: absolute;}
-
-
 .right #section-introduction-planet .content{order: 2; text-align: right;}
 .right #section-introduction-planet .planet{order: 1;}
-.right #section-introduction-planet .planet figure img{right: 0;}
+.right #section-introduction-planet .planet figure img{right: 60%; left: unset;} 
 .right #section-introduction-planet .main-title{padding-left: 20px;margin-left: 0;padding-right: 100px;margin-right: -110px;}
 .right #section-introduction-planet .description{text-align: right;}
 
@@ -108,7 +171,7 @@ By JUAN ESTEBAN RAMIREZ
 #section-informative{min-height: 0; margin-top: -150px; display: block;} 
 #section-informative p{text-align: left;} 
 #section-informative p.lead{max-width: 65%;} 
-#section-informative .title-icon {display: flex; justify-content: flex-start;} 
+#section-informative .title-icon {display: flex; justify-content: flex-start; flex-wrap: wrap;} 
 #section-informative .title-icon h2{font-size: 2rem;} 
 #section-informative .title-icon figure{margin: 0 15px;align-items: center;display: flex;} 
 #section-informative .container-list{display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: center;} 
@@ -121,30 +184,75 @@ By JUAN ESTEBAN RAMIREZ
 #section-informative .container-list .item p{font-size: 1rem; line-height: 1.5rem;} 
 
 
+@media (max-width: 1200px) {
+
+    
+    .comunidad .metodologia-section{margin-top:-50px;}
+    .comercial .metodologia-section{margin-top:-50px;}
+    .presencia .metodologia-section{margin-top:-50px;}
+    .section-select-services.container-section.web{margin-top: -50px;}
+}
+
 @media (max-width: 900px) {
     .services #planets-section{padding-top: 100px;}
     .section-select-services.container-section.web .service{width: calc(50% - 30px);}
-    #section-introduction-planet{overflow: hidden;}
-    #section-introduction-planet .main-title{margin-left: 0;}
 
+    #section-informative .title-icon h2{order: 2;}
+    #section-informative .title-icon figure{order: 1;}
+    #section-introduction-planet{overflow: hidden; max-width: 100%; opacity: 1; min-height: 100vh;} 
+    #section-introduction-planet .main-title{margin-left: 20px;}
+    #section-introduction-planet .main-title h1{font-size: 1.5rem; text-align: center;}
+
+    #section-introduction-planet .planet figure img{top: 50px; filter: brightness(0.3); opacity: .8; transition: .4s all ease-in; left: 0 !important; right: unset !important;}
+    #section-introduction-planet.is-inview .planet figure img{filter: brightness(1); top: 0;}
+    .right #section-introduction-planet .description,
+    #section-introduction-planet .description{text-align: center;}
+
+    #section-informative{margin-top: 20px;}
     #section-informative .container-list .item{width: 100%;}
+    #section-informative .container-list .item.w-75 .content{width: 100%;}    
     #section-informative .container-list .item.w-75{width: 100%;}
 
+    .section-select-services.container-section{padding: 30px 0px;}
+    .section-select-services .container-services{width: 100%;}
+    .section-select-services.container-section{overflow: hidden;}
+
     .section-select-services .main-title{font-size: 2rem;}
-    .how-title h2{font-size: 1.6rem;}
+
+    .how-title{flex-direction: column; align-items: center;}
+    .how-title img{order: 1;}
+    .how-title h2{font-size: 1.6rem; order: 2; margin: 10px 0;}
+    .container-title{text-align: center;}
+
+    .metodologia-section .items-metodologia .item h3{width: 50%;}
     #page.services p{font-size: 1.5rem;max-width: 100%;}
+
+
 }  
   
 @media (max-width: 725px) {
 
 
-    .how-title{}
-    .how-title h2{width: 100%;}
+    #section-introduction-planet .planet figure img{max-width: 700px;}
+
+    .how-title h2{width: auto;}
+    .how-title h2{text-align: center;}
 
     .section-select-services .title-plan-accion h2{font-size: 2rem;}
-    .section-select-services .container-services .service{width: calc(50% - 20px); margin: 10px;}
+    .section-select-services .container-services .service{width: calc(100% - 20px); margin: 10px;}
+
     .section-select-services .main-title{font-size: 2rem;}
-    #section-introduction-planet .content{width: 100%;}
+    .right #section-introduction-planet .content,
+    #section-introduction-planet .content{width: 100%; text-align: center;}
+    .right #section-introduction-planet .main-title{padding: 10px !important; margin-right: 0; }
+    #section-introduction-planet .main-title{padding: 10px;}
+
+    #section-informative .title-icon h2{font-size: 1.5rem;}
+    #section-informative .title-icon{justify-content: center !important;}
+
+    #section-informative .container-list .item{flex-wrap: wrap; justify-content: center;}
+    #section-informative p{text-align: center;}
+    #section-informative .container-list .item h3{text-align: center;}
 
     .section-select-services.web .container-services.full{justify-content: center;}
     .section-select-services.web .container-msg{width: 100%;}

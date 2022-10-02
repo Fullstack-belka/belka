@@ -143,7 +143,7 @@ function belka_scripts() {
 
 	wp_enqueue_script ('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js');
 	wp_enqueue_script ('gsa-ScrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js');
-	
+
 	wp_enqueue_script( 'belka-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	// PLUGINS
@@ -154,11 +154,14 @@ function belka_scripts() {
   	wp_enqueue_script ('theme_script', get_template_directory_uri (). '/assets/js/theme.js', array(), false, true);
 
 	if( str_contains(get_permalink(), '/servicios/') ){	
-
-
 		wp_enqueue_style( 'main_css', get_stylesheet_directory_uri() .  '/assets/css/services.css',array(), '' );
 		wp_enqueue_script( 'main_js', get_stylesheet_directory_uri() . '/assets/js/services.js', array('jquery'), '', true); 
-
+	}
+	
+	
+	wp_enqueue_style( 'main_blog', get_stylesheet_directory_uri() .  '/assets/css/blog.css',array(), '' );
+	if( is_page_template( 'page-templates/template_page_blog.php' )){	
+		wp_enqueue_script( 'main_js', get_stylesheet_directory_uri() . '/assets/js/services.js', array('jquery'), '', true); 
 	}
 	if( is_page_template( 'page-templates/template_page_home.php' ) ) {
 		wp_enqueue_style( 'main_css', get_stylesheet_directory_uri() .  '/assets/css/home.css',array(), '' );
@@ -197,7 +200,17 @@ function belka_whatsapp() {
 }
 
 
-
+function limit_string($string, $repl, $limit) 
+{
+  if(strlen($string) > $limit) 
+  {
+    return substr($string, 0, $limit) . $repl; 
+  }
+  else 
+  {
+    return $string;
+  }
+}
 
 /**
  * Implement the Custom Header feature.

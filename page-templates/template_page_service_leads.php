@@ -96,33 +96,33 @@ get_header();
                 </div>
                 <div class="container-services">
                     <div class="service">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/rrss_lead.png" width="250px" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=57<?= belka_whatsapp();?>&text=Hola Belkacompany 🚀 Quiero obtener Leads">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/rrss_lead.png" width="250px" alt="Redes sociales para mi negocio">
                         </a>
                     </div>
                     <div class="service">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/pauta_lead.png" width="250px" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=57<?= belka_whatsapp();?>&text=Hola Belkacompany 🚀 Quiero obtener Leads">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/pauta_lead.png" width="250px" alt="Pauta digital para mi negocio">
                         </a>
                     </div>
                     <div class="service">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/ux_lead.png" width="250px" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=57<?= belka_whatsapp();?>&text=Hola Belkacompany 🚀 Quiero obtener Leads">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/ux_lead.png" width="250px" alt="UX/UI para mi sitio web">
                         </a>
                     </div>
                     <div class="service">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/seo_lead.png" width="250px" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=57<?= belka_whatsapp();?>&text=Hola Belkacompany 🚀 Quiero obtener Leads">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/seo_lead.png" width="250px" alt="SEO optimización de sitio web ">
                         </a>
                     </div>
                     <div class="service">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/servicio_lead.png" width="250px" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=57<?= belka_whatsapp();?>&text=Hola Belkacompany 🚀 Quiero obtener Leads">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/servicio_lead.png" width="250px" alt="Servicio efectivo para tu sitio web">
                         </a>
                     </div>
                     <div class="service">
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/landing_lead.png" width="250px" alt="">
+                        <a href="https://api.whatsapp.com/send?phone=57<?= belka_whatsapp();?>&text=Hola Belkacompany 🚀 Quiero obtener Leads">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/leads/landing_lead.png" width="250px" alt="Landing pages para la captación leads">
                         </a>
                     </div>
                 </div>

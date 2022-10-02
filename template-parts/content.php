@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -20,33 +20,53 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
+			<p>
+				<?php
+					if ( is_singular() ) :
+						belka_posted_by();
+					endif;
+				?>
+			</p>
 			<div class="entry-meta">
 				<?php
+	
 				belka_posted_on();
-				belka_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
-	</header><!-- .entry-header -->
+	</div><!-- .entry-header -->
 
-	<?php belka_post_thumbnail(); ?>
+	<?php
+		if ( is_singular() ) :
+			belka_post_thumbnail();
+		else :
+			
+		endif;
+	?>
 
 	<div class="entry-content">
+		
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'belka' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+
+		if ( is_singular() ) :
+			the_content(
+				sprintf(
+					wp_kses(
+						/* translators: %s: Name of current post. Only visible to screen readers */
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'belka' ),
+						array(
+							'span' => array(
+								'class' => array(),
+							),
+						)
+					),
+					wp_kses_post( get_the_title() )
+				)
+			);
+		else :
+			$the_post = get_post();
+			echo limit_string($the_post->post_excerpt, '...', 150);
+		endif;
 
 		wp_link_pages(
 			array(
@@ -57,7 +77,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<div class="entry-footer">
 		<?php belka_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+	</div><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

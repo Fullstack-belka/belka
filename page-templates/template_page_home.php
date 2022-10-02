@@ -52,7 +52,7 @@ get_header();
             <section id="planets-section" class="container-section">
                 <div class="container-rocket">
                     <div class="container-title">
-                        <h1 class="main-title" >¿Cuál es tu <br> <strong> objetivo?</strong></h1>
+                        <h1 class="main-title" >¿Cuáles son tus<br> <strong> objetivos?</strong></h1>
                     </div>
                     <div class="container-image">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/image/rocket_1.svg" width="250px" alt="">
@@ -68,7 +68,7 @@ get_header();
                 </figure>
                 <div id="fourth-section-1" class="container-section">
                     <div class="container-title">
-                        <h2 class="main-title" >¿Aún no sabes?</h2>            
+                        <h2 class="main-title" >¿Aún no sabes cuáles son tus objetivos?</h2>            
                     </div>  
                 </div>   
                 <div class="container-section two">
