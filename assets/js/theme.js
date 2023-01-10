@@ -178,13 +178,15 @@ function scrolltop() {
 function toggleMenuHeader() {
 
   $b('#main-header .container-toggle').click(function(){
-    console.log('hola')
     if($b('#main-header').hasClass('open')){
         $b('#main-header').removeClass('open');
         $b('body').removeClass('overflow');
+        $b('#page').removeClass('hidden');
     }else{
       $b('#main-header').addClass('open');
       $b('body').addClass('overflow');
+      $b('#page').addClass('hidden');
+
     }
 
 

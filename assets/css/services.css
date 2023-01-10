@@ -6,6 +6,10 @@ By JUAN ESTEBAN RAMIREZ
 ================================================================================================= */
 
 .services #planets-section{padding-top: 190px;}
+
+
+
+
 /* SECTION SERVICES*/
 .section-select-services.container-section{display: block; min-height: 50vh;}
 .section-select-services .container-title{margin-bottom: 4rem;}
@@ -21,7 +25,7 @@ By JUAN ESTEBAN RAMIREZ
 
 
 /*WEB SERVICES*/
-.section-select-services.container-section.web{margin-top: -250px; background: url('../image/services/web/malla_web.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
+.section-select-services.container-section.web{margin-top: -100px; background: url('../image/services/web/malla_web.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
 .section-select-services.container-section.web .service{width: calc(33% - 30px); margin: 15px;}
 .section-select-services.web .container-msg{width: calc(50% - 30px); margin: 15px; align-self: flex-end;}
 .section-select-services.web .container-msg h3{font-size: 2.3rem;}
@@ -34,7 +38,13 @@ By JUAN ESTEBAN RAMIREZ
 .section-select-services.container-section.leads{background: url('../image/services/leads/malla_leads.svg') no-repeat bottom center / 100%;}
 .section-select-services.leads .container-services .service{width: calc(16% - 30px); min-height: 0;}
 
-
+.leads .container-form div.wpforms-container .wpforms-form .choices__list--dropdown{background:linear-gradient( 90deg, #BEB420,transparent) !important}
+.leads #section-introduction-planet{align-items: flex-start;}
+.leads #section-informative{margin-top: 15px; padding: 60px 15px;}
+.leads .how-title{display: block;}
+.leads #section-informative p.lead{ font-size: 1.4rem; text-align: center;}
+.leads .metodologia-section .items-metodologia{display: flex;flex-wrap: wrap;justify-content: center;}
+.leads .metodologia-section .items-metodologia .item h3{width: 100%;border: 1px solid #BEB420;padding: 20px;border-radius: 15px;}
 .leads #whatsAppFloatingButton{background: linear-gradient(to right, transparent ,#BEB420);border: 1px solid #BEB420;}
 .leads #whatsAppFloatingButton::hover{    background-color: #BEB420;}
 .leads #contact-section{ background-image: linear-gradient( to top, #bcb2218c,transparent);}
@@ -75,7 +85,7 @@ By JUAN ESTEBAN RAMIREZ
 .vender #whatsAppFloatingButton::hover{    background-color: #FCB9D2;}
 .vender #contact-section{ background-image: linear-gradient( to top, #FCB9D28c,transparent);}
 .vender #contact-section .container-form{border: 1px solid #FCB9D2;}
-.vender .container-form form{border: 1px solid #FCB9D2;     background-image: linear-gradient( 90deg, #FCB9D2,transparent);}
+.vender .container-form form{border: 1px solid #b68f9e;     background-image: linear-gradient( 90deg, #FCB9D2,transparent);}
 .vender .container-form form .form-control{border-bottom-color: #FCB9D2;}
 .vender .container-form form textarea.form-control{border-color: #FCB9D2;}
 .vender .container-form .btn{background-color: #FCB9D2;}
@@ -112,21 +122,34 @@ By JUAN ESTEBAN RAMIREZ
 
 /* COMUNIDAD */
 .section-select-services.container-section.comunidad{ background: url('../image/services/comunidad/malla_comunidad.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
-.comunidad .metodologia-section{margin-top: -175px;}
+.comunidad .metodologia-section{margin-top: 0;}
+.comunidad .metodologia-section .items-metodologia{display: flex;}
+.comunidad .metodologia-section .items-metodologia .item{width: 100%;}
+.comunidad .metodologia-section .items-metodologia .item h3{width: 100%;}
+.comunidad .metodologia-section .items-metodologia .item .description{width: 100%; }
+.comunidad .informative-section .how-title{display: block; text-align: center;}
 
 /* COMERCIAL */
 .section-select-services.container-section.comercial{ background: url('../image/services/comercial/malla_comercial.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
-.comercial .metodologia-section{margin-top: -175px;}
+.comercial .metodologia-section{margin-top: 0;}
+.comercial .metodologia-section .how-title{justify-content: center;}
+.comercial .metodologia-section .items-metodologia{display: flex; justify-content: center; flex-wrap: wrap;}
+.comercial .metodologia-section .items-metodologia .item h3{width: 100%; padding: 10px; border: 1px solid #E55723; border-radius: 10px; max-width: 350px;}
+.comercial .resumen-section .how-title{display: block;}
 
 /* PRESENCIA */
 .section-select-services.container-section.presencia{ background: url('../image/services/presencia_digital/malla_presencia_digital.svg') no-repeat bottom center / 100%; flex-wrap:wrap; display: flex; justify-content: center; align-self: flex-end;}
-.presencia .metodologia-section{margin-top: -175px;}
+.presencia .metodologia-section{margin-top: -0;}
+.presencia .metodologia-section .items-metodologia .item {flex-wrap: nowrap;}
+.presencia .metodologia-section .items-metodologia .item h3{padding-right: 30px; width: auto; margin-top: 10px;}
+.presencia .metodologia-section .items-metodologia .item .description{width: auto;}
+.presencia .how-title{display: block; text-align: center !important;}
 
 #page.services p{font-size: 2rem;}
 #section-introduction-planet{display: flex; align-items: center; text-align: left; flex-wrap: wrap; position: relative; z-index: -1;}
 #section-introduction-planet .main-title{padding: 10px 20px; padding-left: 100px; margin-left: -110px; margin-bottom: 35px; background-color: var(--secondary-belka); color: white; transform: translateX(-20px) skewX(-10deg); border-radius: 10px; display: inline-flex;}
 #section-introduction-planet .main-title h1{margin: 0;}
-#section-introduction-planet .content{width: 60%;}
+#section-introduction-planet .content{width: 60%; margin-top: 50px;}
 #section-introduction-planet .planet{width: 40%;position: relative;height: 100%;}
 #section-introduction-planet .planet figure{display: flex;justify-content: flex-start;align-items: center;}
 #section-introduction-planet .planet figure img{position: fixed; left: 60%; z-index: -1;} 
@@ -136,7 +159,7 @@ By JUAN ESTEBAN RAMIREZ
 #section-introduction-planet .goals .item{width: 250px;text-align: center; }
 #section-introduction-planet .goals .item p{font-size: 1.5rem;}
 
-.right #section-introduction-planet .content{order: 2; text-align: right;}
+.right #section-introduction-planet .content{order: 2; text-align: right; }
 .right #section-introduction-planet .planet{order: 1;}
 .right #section-introduction-planet .planet figure img{right: 60%; left: unset;} 
 .right #section-introduction-planet .main-title{padding-left: 20px;margin-left: 0;padding-right: 100px;margin-right: -110px;}
@@ -168,7 +191,7 @@ By JUAN ESTEBAN RAMIREZ
 .right .how-title{text-align: right; justify-content: flex-end;}
 
 /* INFORMACION VENDER */
-#section-informative{min-height: 0; margin-top: -150px; display: block;} 
+#section-informative{min-height: 0; margin-top: -50px; display: block;} 
 #section-informative p{text-align: left;} 
 #section-informative p.lead{max-width: 65%;} 
 #section-informative .title-icon {display: flex; justify-content: flex-start; flex-wrap: wrap;} 
@@ -180,16 +203,17 @@ By JUAN ESTEBAN RAMIREZ
 #section-informative .container-list .item.w-75{width: 75%; flex-wrap: wrap; justify-content: center;} 
 #section-informative .container-list .item.w-75 .content{width: 100%; text-align: center; width: 80%;}
 #section-informative .container-list .item.w-75 .content p{text-align: center;}
-#section-informative .container-list .item h3{font-weight: 600; font-size: 1.5rem} 
+#section-informative .container-list .item h3{font-weight: 600; font-size: 1.5rem; margin-top: 0;} 
 #section-informative .container-list .item p{font-size: 1rem; line-height: 1.5rem;} 
+#section-informative .container-list .item .content{padding: 10px;}
 
+#page.services .container-form p{font-size: 1.2rem;}
 
 @media (max-width: 1200px) {
 
     
     .comunidad .metodologia-section{margin-top:-50px;}
     .comercial .metodologia-section{margin-top:-50px;}
-    .presencia .metodologia-section{margin-top:-50px;}
     .section-select-services.container-section.web{margin-top: -50px;}
 }
 
@@ -227,10 +251,14 @@ By JUAN ESTEBAN RAMIREZ
     .metodologia-section .items-metodologia .item h3{width: 50%;}
     #page.services p{font-size: 1.5rem;max-width: 100%;}
 
+    .presencia .metodologia-section .items-metodologia .item {flex-wrap: wrap;}
+
 
 }  
   
 @media (max-width: 725px) {
+
+    .comercial #section-introduction-planet .content{margin-top: 100px;}
 
 
     #section-introduction-planet .planet figure img{max-width: 700px;}
@@ -262,7 +290,7 @@ By JUAN ESTEBAN RAMIREZ
     .section-select-services.container-section.web .service{width: calc(33% - 20px); margin: 10px;}
 
     .section-select-services.leads .container-services .service{width: 50%;}
-    .presencia .metodologia-section{margin: 0;}
+    .presencia .metodologia-section{margin: 0; padding: 100px 0;}
 
     #section-introduction-planet .planet{left: 0;position: absolute; z-index: -1}
     .right #section-introduction-planet .planet{left: unset;right: 0;}

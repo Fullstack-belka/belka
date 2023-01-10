@@ -78,8 +78,8 @@ function slickClients(){
     lazyLoad: 'ondemand',
     autoplay: true,
     slidesToScroll: 3,
-    nextArrow: jQuery('.container-clients.big .next'),
-    prevArrow:  jQuery('.container-clients.big .prev'),
+    nextArrow: jQuery('.content-clients.big .next'),
+    prevArrow:  jQuery('.content-clients.big .prev'),
     responsive: [
       {
         breakpoint: 10000,
@@ -114,8 +114,8 @@ function slickClients(){
     lazyLoad: 'ondemand',
     autoplay: true,
     slidesToScroll: 3,
-    nextArrow: jQuery('.container-clients.medium .next'),
-    prevArrow:  jQuery('.container-clients.medium .prev'),
+    nextArrow: jQuery('.content-clients.medium .next'),
+    prevArrow:  jQuery('.content-clients.medium .prev'),
     responsive: [
       {
         breakpoint: 10000,

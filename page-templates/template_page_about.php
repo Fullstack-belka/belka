@@ -66,7 +66,7 @@ get_header();
                             <div class="person juanpa">
                                 <div class="content">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanpa.png" width="250px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanpa.png" width="250px" alt="Juanpa CEO - Estrategy">
                                     </figure>
                                     <div class="title-person">
                                         <h3>Juanpa</h3>
@@ -77,7 +77,7 @@ get_header();
                             <div class="person juanes">
                                 <div class="content">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanes.png" width="200px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_juanes.png" width="200px" alt="Juanes Fullstack Developer">
                                     </figure>
                                     <div class="title-person">
                                         <h3>Juanes</h3>
@@ -88,7 +88,7 @@ get_header();
                             <div class="person daniq">
                                 <div class="content">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_daniq.png" width="200px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_daniq.png" width="200px" alt="Dani Filmaker">
                                     </figure>
                                     <div class="title-person">
                                         <h3>Daniel</h3>
@@ -99,11 +99,11 @@ get_header();
                             <div class="person dani">
                                 <div class="content">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_dani.png" width="100px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_dani.png" width="100px" alt="Dani Project Manager">
                                     </figure>
                                     <div class="title-person">
                                         <h3>Dani</h3>
-                                        <p>Project Managment</p>
+                                        <p>Project Manager</p>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@ get_header();
                                         <p>Analista de Pauta</p>
                                     </div>
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_cami.png" width="100px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_cami.png" width="100px" alt="Cami Analista de Pauta">
                                     </figure>
 
                                 </div>
@@ -138,7 +138,7 @@ get_header();
                                         <p>Content Manager</p>
                                     </div>
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_will.png" width="100px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_will.png" width="100px" alt="Will Content Manager">
                                     </figure>
                             
                                 </div>
@@ -147,7 +147,7 @@ get_header();
                             <div class="person aleja">
                                 <div class="content">
                                     <figure>
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_aleja.png" width="100px" alt="Dani Project Managment">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/image/empleado_aleja.png" width="100px" alt="Aleja CGO Belkacompany">
                                     </figure>
                                     <div class="title-person">
                                         <h3>Aleja</h3>

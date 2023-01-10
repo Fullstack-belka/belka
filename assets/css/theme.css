@@ -6,6 +6,7 @@ By JUAN ESTEBAN RAMIREZ
 ================================================================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:ital,wght@0,100;0,200;0,300;0,500;0,700;1,400&display=swap');
 
 :root{
   --primary-belka:#EE0000;
@@ -59,7 +60,8 @@ body.custom-background{    background-color: #0D0F1F;}
 section{padding: 50px 25px; margin: auto;}
 a{text-decoration: unset;}
 body.overflow{overflow: hidden;}
-
+#page{opacity: 1; transition: .4s all;}
+#page.hidden{opacity: 0;}
 
 /* HOME PRIMARY SECTION */
 .container-section{ text-align: center; min-height: 75vh;max-width: 1400px;   margin: auto; width: 100%; display: flex; padding: 35px 50px;  align-items: center; opacity: 0; transition: .4s all;} 
@@ -141,7 +143,13 @@ select{background-color: transparent !important; outline: unset !important; bord
 #main-header::before{ content:'';background: transparent url(../image/malla_menu.svg) no-repeat center/ 100%;display: block;height: 100px;width: 100%;position: absolute;z-index: -1;transform: scaleY(0);transition: .4s all;transform-origin: center;}
 #main-header.active{    transform: translate(0px, 0px); opacity: 1;}
 #main-header.active::before{transform: scaleY(1);}
-#main-header.active.scroll::before{height: 50px;;}
+
+#main-header.active.scroll::before{height: 50px;}
+#main-header{    background: linear-gradient( var(--primary-dark-belka) 38%, transparent 70%);}
+#main-header{    background: linear-gradient( var(--primary-dark-belka) 38%, transparent 70%);}
+.twinkling.black ~ div #main-header{background: linear-gradient( #000 38%, transparent 70%);}  
+.blog #main-header{ background: var(--primary-dark-belka);}
+
 #main-header .main-menu{margin: auto;}
 #main-header ul{display: flex; justify-content: center; margin: auto; align-items: center; flex-wrap: wrap;}
 #main-header ul li a{color: white; background-color: var(--third-belka) ; font-size: 1rem; margin: 10px; text-decoration: unset; padding:2px 20px; min-width: 150px; border:1px solid; border-radius: 25px; border-color: var(--third-belka); transition: .4s all; display: block; text-align: center; font-weight: bold;}
@@ -151,6 +159,10 @@ select{background-color: transparent !important; outline: unset !important; bord
 #main-header ul li.logo a{border: 0px;}
 #main-header ul li.logo a.active,
 #main-header ul li.logo a:hover{background-color: unset;}
+#main-header .social_links{display: none;}
+#main-header .container_image_mobile{display: none;}
+
+
 #main-header .site-branding .custom-logo-link img{max-width: 125px;}
 #main-header .stars{position: absolute;height: 100vh; width: 0; transition: .4s all;}
 
@@ -212,8 +224,8 @@ select{background-color: transparent !important; outline: unset !important; bord
 .container-form form .form-control:not(.wpforms-field ){padding: 10px 20px; background-color: transparent ; border-bottom: 1px solid var(--primary-belka)  !important; width: 100%;}
 .container-form form textarea.form-control{ border: 1px solid var(--primary-belka);}
 .container-form .capsule{max-width: 150px; position: absolute;}
-.container-form .capsule.capsule-1{top: -75px; left: -75px;}
-.container-form .capsule.capsule-2{bottom: -75px; right: -75px;}
+.container-form .capsule.capsule-1{top: -40px;left: -30px;}
+.container-form .capsule.capsule-2{bottom: -40px;right: -30px;}
 .container-form .capsule{transform: scale(0); transition: .6s all;}
 
 
@@ -253,7 +265,8 @@ div.wpforms-container-full .wpforms-form noscript.wpforms-error-noscript{color: 
 
 #contact-section.active .container-rocket{transform: translateX(0);}
 #contact-section.active .container-form{border: 1px solid var(--primary-belka);}
-#contact-section.active .container-form .capsule{transform: scale(1);}
+#contact-section.active .container-form .capsule{transform: scale(1) rotate(-90deg);}
+#contact-section.active .container-form .capsule-2{transform: rotate(90deg);}
 #contact-section.active .container-form form{animation: animationParpadeo .5s 2, linear; opacity: 1; transition-delay: .5s;}
 
 /* SECTION PLANETAS */
@@ -440,18 +453,28 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
   #main-header.active.scroll::before{height: 100px;}
   .container-section{padding: 35px 15px;}
   #main-header .container-toggle{display: block;}
-  #main-header .main-menu{height: 100vh;padding-top: 50px; transform: translateX(-100vw); transition: .4s all; background: linear-gradient(to bottom,#0d0f1f85 50%, #ee0000d4);}
+  #main-header .main-menu{height: 100vh; width: 100%; overflow: hidden; padding-top: 50px; transform: translateX(-100vw); transition: .4s all; background: linear-gradient(to bottom,#0d0f1f85 50%, #ee0000d4);}
   #main-header.open .main-menu{transform: translateX(0);}
   #main-header.open .container-toggle{border: 1px solid white;}
   .open .container-toggle{border: 1px solid white;}
   .open .menu_toggle span:before{background-color: white;}
   .open .menu_toggle span, .open .menu_toggle span:after{background-color: white;}
-  #main-header ul li{width: 100%; order: 2;}
-  #main-header ul li.logo{order: 1;text-align: center;}
-  #main-header ul li.logo a{display: inline-block; margin: auto;}
-  #main-header ul li a.active, #main-header ul li a:hover{border: 2px solid var(--primary-belka);}
-  #main-header ul li a{background-color: transparent;font-size: 1.4rem; border: 1px solid transparent;display: block;padding: 15px;border: 2px solid var(--primary-belka);}
+  #main-header ul.link-list li{width: 100%; order: 2;}
+  #main-header ul.link-list li.logo{order: 1;text-align: center;}
+  #main-header ul.link-list li.logo a{display: inline-block; margin: auto; border: 0 !important;}
+  #main-header ul.link-list li a.active, #main-header ul li a:hover{border: 2px solid var(--primary-belka);}
+  #main-header ul.link-list li a{background-color: transparent;font-size: 1.4rem; border: 1px solid transparent;display: block;padding: 5px 15px;border: 2px solid var(--primary-belka);}
   #main-header.open .stars{width: 100%;}
+
+  #main-header .social_links{display: block;}
+  #main-header .social_links ul{flex-wrap: nowrap;}
+  #main-header .social_links li a{flex-wrap: nowrap;min-width: auto;padding: 0;}
+
+  #main-header .container_image_mobile{display: block; position: absolute; bottom: -100px; z-index: -1; transition: .6s all ease-in-out; transition-delay: .2s;}
+  #main-header.open .container_image_mobile{bottom: -10px;}
+  #main-header .container_image_mobile figure{margin: 0;}
+  #main-header .container_image_mobile img{width: 100%;}
+
   .wrap_nav{top: calc(80% - 30px);}
   .wrap_nav .nav{height: 56px; padding: 10px;}
   .wrap_nav .nav.next::before,
@@ -476,6 +499,10 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
 
   .whatsapp-floating-button{right: 15px;}
 
+  .container-form .capsule img{width: 45px;}
+  .container-form .capsule.capsule-1{top: -15px;left: -15px;}
+  .container-form .capsule.capsule-2{bottom: -15px; right: -15px;}
+
   #contact-section{overflow: hidden;}
   #contact-section .container-form{transform: scale(.5) translateX(-150vw);}
   #contact-section .container-rocket{transform: translateX(100vw);}
@@ -486,6 +513,9 @@ footer .column .newsletter .wpforms-submit-container .btn:hover{    background: 
   #contact-section .container-rocket.active img{transform: scale(1);}
   #contact-section .container-form.active{transform: translateX(0);}
 
+
+  #section-introduction-planet .title-lead h2{font-size: 1.2rem;}
+  
 
   #main-header .desktop{display: none;}
 

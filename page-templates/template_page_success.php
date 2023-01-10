@@ -269,7 +269,7 @@ get_header();
                         <h2 class="heading-title heading-title">Y ellos también han crecido en nosotros</h2>
                     </div> 
 
-                    <div class="content-clients">
+                    <div class="content-clients big">
                         <div class="container-clients big">
                             <div class="item">
                                 <a href="https://www.comfenalcoantioquia.com.co/personas" target="_blank" rel="follow" title="Comfenalco antioquia" >
@@ -302,7 +302,7 @@ get_header();
                             <div class="nav next" aria-label="Botón para continuar con el siguiente banner"></div>
                         </div>
                     </div>
-                    <div class="content-clients">
+                    <div class="content-clients medium">
                         <div class="container-clients medium">
                             <div class="item">
                                 <a href="https://www.cootramed.coop/" target="_blank" rel="follow"  title="Cootramed - Cooperativa de ahorro">

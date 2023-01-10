@@ -36,10 +36,10 @@ By JUAN ESTEBAN RAMIREZ
 #section-featured-blog .entry-more-featured .container .post-heading{text-align: left;font-size: 1.2rem; }
 #section-featured-blog .entry-more-featured .container .post-heading a{color: white; font-weight: 400; text-align: left;}
 
+#main-header.active.scroll{ height: 50px;}
 
-
-.post-thumbnail{max-width: 100%;}
-.post-thumbnail img{max-width: 100%;}
+.post-thumbnail{max-width: 100%;text-align: center;}
+.post-thumbnail img{max-width: 350px;margin: auto;height: auto;}
 
 .site-main.main-content{ padding-top: 100px; }
 .site-main.main-content.single{ padding-top: 80px; }

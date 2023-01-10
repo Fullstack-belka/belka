@@ -20,8 +20,30 @@ get_header();
                         <h1>Mejora tu Presencia Digital</h1>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing urna morbi netus luctus blandit mollis integer</p>
+                        <p>Por una Presencia Digital con Retorno a la Inversión</p>
                     </div>
+                    <div class="metodologia-section">
+                        <div class="items-metodologia">
+                            <div class="item">
+                                <h3>Implementación</h3>
+                                <div class="description">
+                                <p>La presencia digital de tu negocio también tiene retorno… ¡Sí! No todo es ventas, y más cuando lo primero que quieres es posicionamiento de marca. Ahora, cuando hablamos de presencia digital, no todo es estar presente en Medios y Redes Sociales. </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>Metodología</h3>
+                                <div class="description">
+                                <p>Para nuestro equipo tu presencia digital debe estar pensada en 360, o sea, integrar los diferentes canales digitales donde tu negocio puede tener una presencia activa y que esto nos permite cumplir con objetivos y KPI que te digan si hay un retorno a tu inversión.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>Inbound</h3>
+                                <div class="description">
+                                <p>Ahora, pensar en tu presencia digital no implica que debas tener una agencia contratada para que te haga todo, no. Con Belka Company puedes trabajar en equipo, incluso, si tienes una agencia contratada podemos hacerlo así, ya lo hemos vivido.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
                 </div>
                 <div class="planet">
                     <figure>
@@ -32,29 +54,8 @@ get_header();
 
             <section class="metodologia-section container-section">
                  <div class="how-title">
-                    <h2>Así lo haces con Belka</h2> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/ico_how_services.png" width="36px" alt="">
-                </div>
-
-                <div class="items-metodologia">
-                    <div class="item">
-                        <h3>Implementación</h3>
-                        <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique fugit iste explicabo in nobis exercitationem, vel praesentium error, dicta quidem! Minus sint exercitationem est repellendus a error mollitia. Sequi eius, dolorum neque pariatur aliquam commodi consequatur saepe rerum suscipit.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3>Metodología</h3>
-                        <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique fugit iste explicabo in nobis exercitationem, vel praesentium error, dicta quidem! Minus sint exercitationem est repellendus a error mollitia. Sequi eius, dolorum neque pariatur aliquam commodi consequatur saepe rerum suscipit.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <h3>Inbound</h3>
-                        <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique fugit iste explicabo in nobis exercitationem, vel praesentium error, dicta quidem! Minus sint exercitationem est repellendus a error mollitia. Sequi eius, dolorum neque pariatur aliquam commodi consequatur saepe rerum suscipit.</p>
-                        </div>
-                    </div>
+                     <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/ico_how_services.png" width="36px" alt="">
+                    <h2>“Aunque vivimos del marketing digital, lo ideal para un negocio no es contratar a través de un tercero toda la operación, tener un equipo interno es un acierto, nosotros en Belka estamos para integrarnos a él”</h2> 
                 </div>
 
             </section>

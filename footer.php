@@ -76,14 +76,8 @@
             <h3>Contacto</h3>
             <ul>
                 <li><a href="tel:573002960792" class="text_number"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/ico/ico_cel.svg" width="10px" alt="Llamanos a nuestro número télefonico">(+57) <?= belka_whatsapp(); ?></a></li>
-            </ul>
-            <ul>
                 <li><a href="https://goo.gl/maps/X295LQjZb7xyW4Gn8" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/ico/ico_city.svg" width="10px" alt="Llamanos a nuestro número télefonico">Cl. 7D #43A-40</a></li>
-            </ul>
-            <ul>
                 <li><a href="mailto:estrategia@belkacompany.com"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/ico/ico_email.svg" width="10px" alt="Llamanos a nuestro número télefonico">estrategia@belkacompany.com</a></li>
-            </ul>
-            <ul>
                 <li><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/image/ico/ico_earth.svg" width="10px" alt="Llamanos a nuestro número télefonico">Medellin, Colombia</a></li>
             </ul>
         </div>

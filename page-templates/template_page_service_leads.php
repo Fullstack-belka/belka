@@ -51,6 +51,11 @@ get_header();
                         </div>
                     </div>
 
+                    <div class="informative">
+                        <p class="lead">Si tu negocio se centra en obtener clientes potenciales que te funcionen, estás en el lugar indicado de este Sitio Web, ahora, ¿qué tan calificados son tus Leads?, ¿cuántos clientes se vuelven efectivos gracias a los Leads generados en tus campañas o acciones de Marketing?</p>
+                        <p class="lead">¡Ahí es donde Belka aparece!  Nosotros estamos para que no te llenes de bases de datos que solo te sirven para llenarte de contactos que no signifiquen nada para tu negocio. Nosotros queremos darte Leads que conviertan y por eso, trabajando con la Metodología Inbound, logramos que no solo tengas bases nutridas y efectivas, trabajamos con esos contactos.</p>
+                    </div>
+
 
                 </div>
                 <div class="planet">
@@ -59,31 +64,29 @@ get_header();
                     </figure>
                 </div>
             </section>
-            
+
             <section class="metodologia-section  container-section">
                  <div class="how-title">
-                    <h2>¿Qué hacemos?</h2> 
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/ico_how_services.png" width="36px" alt="">
+                     <img src="<?php echo get_template_directory_uri(); ?>/assets/image/services/ico_how_services.png" width="36px" alt="">
+                    <h2>¿De qué manera?</h2> 
                 </div>
+
 
                 <div class="items-metodologia">
                     <div class="item">
-                        <h3>Implementación</h3>
-                        <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique fugit iste explicabo in nobis exercitationem, vel praesentium error, dicta quidem! Minus sint exercitationem est repellendus a error mollitia. Sequi eius, dolorum neque pariatur aliquam commodi consequatur saepe rerum suscipit.</p>
-                        </div>
+                        <h3>1. Definiendo el Buyer Persona</h3>
                     </div>
                     <div class="item">
-                        <h3>Metodología</h3>
-                        <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique fugit iste explicabo in nobis exercitationem, vel praesentium error, dicta quidem! Minus sint exercitationem est repellendus a error mollitia. Sequi eius, dolorum neque pariatur aliquam commodi consequatur saepe rerum suscipit.</p>
-                        </div>
+                        <h3>2. Desarrollando la Estrategia</h3>
                     </div>
                     <div class="item">
-                        <h3>Inbound</h3>
-                        <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, similique fugit iste explicabo in nobis exercitationem, vel praesentium error, dicta quidem! Minus sint exercitationem est repellendus a error mollitia. Sequi eius, dolorum neque pariatur aliquam commodi consequatur saepe rerum suscipit.</p>
-                        </div>
+                        <h3>3. Generando los Leads de Calidad</h3>
+                    </div>
+                    <div class="item">
+                        <h3>4. Ejecutando el Plan de Acción</h3>
+                    </div>
+                    <div class="item">
+                        <h3>5. Midiendo y retomando la actividad</h3>
                     </div>
                 </div>
 
@@ -127,6 +130,7 @@ get_header();
                     </div>
                 </div>
             </section>
+            
             
             <?php get_template_part( 'page-templates/partials/contact' , 'leads' );?>
             

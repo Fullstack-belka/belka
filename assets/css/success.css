@@ -185,20 +185,25 @@ By JUAN ESTEBAN RAMIREZ
   #clientes-section .cliente .title-section{flex-wrap: wrap;}
   #clientes-section .cliente .title-section .logo{order: 1;}
   #clientes-section .cliente .title-section .container-title{order: 2;}
+  #more-clients-section .container-section{padding: 0; display: block;}
+  #more-clients-section .container-title{margin-bottom: 2rem;}
+  #more-clients-section .container-clients{display: block;}
 
-  #primary-section.container-section{ min-height: 100vh; }
+  #video-section{overflow: hidden;}
 
-  #video-section .container-title{font-size: 2rem; margin-bottom: 0rem;}
+  #primary-section.container-section{ min-height: 100vh; overflow: hidden;}
+
+  #video-section .container-title{font-size: 1.5rem; margin-bottom: 0rem;}
   #video-section .container-section{padding: 0;}
   
-  #more-clients-section .container-section{padding: 0;}
-  #more-clients-section .container-title{margin-bottom: 2rem;}
+
 
   #video-section .container-video .capsule img{max-width: 45px; width: 100%;}
-  #video-section .container-video .capsule.capsule-1{top: -40px; left: -40px;}
-  #video-section .container-video .capsule.capsule-2{bottom: -40px; right: -40px;}
+  #video-section .container-video .capsule.capsule-1{top: -15px; left: -15px; transform: rotate(-90deg);}
+  #video-section .container-video .capsule.capsule-2{bottom: -15px; right: -15px; transform: rotate(90deg);}
 
-  #more-clients-section .wrap_nav{opacity: 1; transition: .4s all; display: flex;}
+  #more-clients-section .wrap_nav{opacity: 1; transition: .4s all; display: flex; top: calc(50% - 30px);}
+  #more-clients-section{overflow: hidden;}
   
 }
 @media (max-width: 725px) {

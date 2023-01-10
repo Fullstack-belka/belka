@@ -7,7 +7,7 @@ let first_section_show = gsap.timeline({
     trigger: '#primary-section',
     start: "60% center",
     end: '100% center',
-    markers: true,
+    markers: false,
     toggleClass: 'active',
     scrub: 1,
   },
@@ -47,8 +47,8 @@ let lead_section_show = gsap.timeline({
         {
           breakpoint: 900,
           settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToShow: 3,
+            slidesToScroll: 3
           }
         },
         {
